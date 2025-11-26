@@ -1,0 +1,17 @@
+.activity-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__title{
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__image{
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}

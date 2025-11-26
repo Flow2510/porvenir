@@ -1,0 +1,12 @@
+{
+  "siteTitle": "Porvenir",
+  "title": "L'auberge del Porvenir",
+  "menu": {
+    "accueil": "Accueil", 
+    "auberge": "L'auberge", 
+    "locations": "Les locations", 
+    "activities": "Activités",
+    "contact": "Contact", 
+    "reservation": "Réservation"
+  }
+}

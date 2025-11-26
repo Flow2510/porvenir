@@ -1,0 +1,20 @@
+{
+    "santamarta" : {
+        "title": "Santa Marta",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+        "linkText": "En savoir plus",
+        "href": "/activities"
+    },
+    "plages" : {
+        "title": "Ses plages",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+        "linkText": "En savoir plus",
+        "href": "/activities"
+    },
+    "jungle" : {
+        "title": "Sa jungle",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+        "linkText": "En savoir plus",
+        "href": "/activities"
+    }
+}

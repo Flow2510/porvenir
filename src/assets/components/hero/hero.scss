@@ -1,0 +1,29 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+
+    &__video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding: 2rem;
+
+        &-title{
+            font-size: 2rem;
+        }
+    }
+}

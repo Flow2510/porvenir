@@ -1,0 +1,12 @@
+{
+  "siteTitle": "Porvenir",
+  "title": "La posada del Porvenir",
+  "menu": {
+    "accueil": "Inicio", 
+    "auberge": "La posada", 
+    "locations": "Los alquileres", 
+    "activities": "Actividades",
+    "contact": "Contacto", 
+    "reservation": "Reserva"
+  }
+}

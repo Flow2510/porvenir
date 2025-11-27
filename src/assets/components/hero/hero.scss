@@ -4,6 +4,10 @@
     color: white;
     position: relative;
 
+    @media screen and (min-width:768px) {
+        height: 500px;
+    }
+
     &__video{
         position: absolute;
         width: 100%;
@@ -22,8 +26,17 @@
         gap: 1rem;
         padding: 2rem;
 
+        @media screen and (min-width:768px){
+            padding: 3rem 5rem;
+        }
+
         &-title{
             font-size: 2rem;
+            max-width: 450px;
+        }
+
+        &-text{
+            max-width: 450px;
         }
     }
 }

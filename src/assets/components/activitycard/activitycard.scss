@@ -7,11 +7,22 @@
         height: 40px;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @media screen and (min-width:768px){
+            height: auto;
+        }
     }
 
     &__image{
         width: 100%;
         aspect-ratio: 1;
         object-fit: cover;
+    }
+
+    &__text{
+
+        @media screen and (min-width:768px){
+            padding-right: 1rem;
+        }
     }
 }

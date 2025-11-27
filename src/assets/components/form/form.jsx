@@ -163,7 +163,7 @@ export default function Form(){
                 className='form__button' 
                 type='submit'
             >
-                Envoyer un message:
+                Envoyer un message
             </motion.button>
         </form>
     )

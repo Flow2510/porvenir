@@ -9,11 +9,19 @@
     width: 100%;
     padding: 1rem;
     z-index: 50;
-    border-bottom: 1px solid #2c5b5b81;
+    border-bottom: 1px solid #2c5b5b81;  
+
+    @media screen and (min-width:1200px){
+        padding: 1.5rem;
+    }
 
     &__social{
         display: flex;
         gap: 1rem;
+
+        @media screen and (min-width:768px){
+            display: none;
+        }
 
         &-link{
             font-size: 1.5rem;
@@ -48,6 +56,14 @@
             width: fit-content;
             margin: 0.25rem 0;
             padding: 0.5rem 0.8rem;
+            background: white;
+            color: #2C5B5B;
+            border: 1px solid;
+
+            &:hover{
+                background: #2C5B5B;
+                color: white;
+            }
         }
     }
 
@@ -56,18 +72,45 @@
         border: none;
         font-size: 1.2rem;
         cursor: pointer;
+
+        @media screen and (min-width:850px){
+            display: none;
+        }
     }
 
     &__nav{
 
         &-desktop{
             display: none;
+
+            a{
+
+                @media screen and (min-width:768px){
+                    font-family: "orbitron", sans-serif;
+                    color: inherit;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+
+                    &:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 3px;
+                        color: #2C5B5B;
+                    }
+                }
+            }
+
+            @media screen and (min-width:850px){
+                display: flex;
+                gap: 1rem;
+            }
         }
     }
 }
 
 .header__nav-mobile{
     background: #2C5B5B;
+    background-position: bottom 1rem right 1rem;
     position: fixed;
     top: -260px;
     left: 0;
@@ -78,6 +121,23 @@
     padding: 1rem;
     transition: top 0.5s ease-in-out;
     z-index: 40;
+
+    &::after{
+        content: "";
+        position: absolute; /* ← ça suffit, même si le parent est fixed */
+        bottom: 0.5rem;
+        right: 0rem;
+        height: 100px;
+        width: 100px;
+        background-image: url("/src/assets/images/decoration-feuille2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+    }
+
+    @media screen and (min-width:850px){
+        display: none;
+    }
 
     &--active{
         top: 69px;
@@ -90,4 +150,9 @@
         padding: 0.25rem 0;
         width: fit-content;
     }
+}
+
+.active{
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
 }

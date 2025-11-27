@@ -9,16 +9,20 @@ export default function Hero() {
     return(
         <section className='hero'>
             <video className='hero__video' autoPlay loop muted src="/src/assets/video/porvenir.mp4"></video>
-            <motion.div 
-                initial={{ y: 50 }} 
-                whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0.5 }} 
-                transition={{ duration: 0.5 }}
-                className='hero__content'
-            >
-                <h2 className='hero__content-title'>{t('title')}</h2>
-                <p className='hero__content-text'>{t('text')}</p>
-            </motion.div>
+            <div className='hero__content'>
+                <motion.h2 
+                    initial={{ y: 50 }} 
+                    whileInView={{ y: 0 }} 
+                    viewport={{ once: true, amount: 0.5 }} 
+                    transition={{ duration: 0.5 }}
+                    className='hero__content-title'>{t('title')}</motion.h2>
+                <motion.p 
+                    initial={{ y: 50 }} 
+                    whileInView={{ y: 0 }} 
+                    viewport={{ once: true, amount: 0.5 }} 
+                    transition={{ duration: 0.5 }}
+                    className='hero__content-text'>{t('text')}</motion.p>
+            </div>
         </section>
     )
 }

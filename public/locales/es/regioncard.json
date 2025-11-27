@@ -1,0 +1,20 @@
+{
+    "santamarta": {
+        "title": "Santa Marta",
+        "text": "Santa Marta, la ciudad más antigua de Colombia, cautiva por su centro histórico, sus playas y su ambiente acogedor. Una parada imprescindible para explorar la costa caribeña mientras disfrutas de la proximidad de la selva y las montañas.",
+        "linkText": "Saber más",
+        "href": "/activities"
+    },
+    "plages": {
+        "title": "Sus playas",
+        "text": "Amplias extensiones de arena, calas aisladas y playas animadas: la región de Santa Marta ofrece una diversidad perfecta para todos los gustos. Ya busques relax, baño o ambiente festivo, cada playa tiene su encanto único.",
+        "linkText": "Saber más",
+        "href": "/activities"
+    },
+    "jungle": {
+        "title": "Su selva",
+        "text": "Sumérgete en el corazón de la selva de Magdalena, un ecosistema rico en biodiversidad. Senderos sombreados, cascadas escondidas y fauna tropical te esperan para aventuras inolvidables, a pocos minutos de tu estancia.",
+        "linkText": "Saber más",
+        "href": "/activities"
+    }
+}

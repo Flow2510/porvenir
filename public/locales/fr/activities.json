@@ -1,11 +1,15 @@
 {
     "pageTitle" : "Activités",
     "title" : "Découvrez la région de Magdalena",
-    "textIntro" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+    "textIntro" : "La région de Magdalena offre une diversité unique en Colombie : entre jungle tropicale, plages sauvages, montagnes enneigées et villages culturels, elle séduit les voyageurs en quête de nature et d’authenticité. Depuis notre hébergement, vous êtes idéalement situé pour explorer les plus beaux sites tout en profitant du calme de la forêt.",
     "activityTitle1" : "Santa Marta",
-    "activityText1" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+    "activityText1" : "Première ville fondée par les Espagnols en Colombie, Santa Marta est un mélange charmant d’histoire, de culture caraïbe et de paysages marins. Ses rues colorées, ses petites places animées et ses couchers de soleil sur la baie en font une étape incontournable pour les visiteurs.",
     "activityTitle2" : "Ses plages",
-    "activityText2" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+    "activityText2" : "La région de Santa Marta offre une incroyable variété de plages : criques sauvages entourées de jungle, vastes étendues de sable doré, eaux turquoise et spots parfaits pour se détendre ou explorer. À quelques minutes de votre hébergement, chaque plage révèle une atmosphère unique.",
     "activityTitle3" : "Sa jungle",
-    "activityText3" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!"
+    "activityText3" : "La jungle de Magdalena est l’un des trésors les plus impressionnants de la région : végétation luxuriante, chants d’oiseaux tropicaux, rivières cristallines et une nature omniprésente qui offre un dépaysement total. Depuis votre hébergement, vous êtes immergé au cœur de cette biodiversité exceptionnelle.",
+    "ctaTitle" : "Envie d’en savoir plus ?",
+    "ctaText" : "Découvrez toutes nos activités et laissez-vous guider entre jungle, plages sauvages et culture locale. Nous sommes là pour vous aider à préparer votre séjour idéal.",
+    "ctaTitle2" : "Envie de découvrir ces plages ?",
+    "ctaText2" : "Entre criques sauvages, eau turquoise et ambiance caraïbe, les plages de Santa Marta offrent des expériences pour tous les voyageurs. Contactez-nous pour organiser vos sorties ou pour obtenir nos meilleurs conseils locaux."
 }

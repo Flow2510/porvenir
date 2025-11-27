@@ -1,19 +1,19 @@
 {
     "santamarta" : {
         "title": "Santa Marta",
-        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+        "text": "Santa Marta, la plus ancienne ville de Colombie, séduit par son centre historique, ses plages et son ambiance chaleureuse. Une étape incontournable pour explorer la côte caraïbe tout en profitant de la proximité de la jungle et des montagnes.",
         "linkText": "En savoir plus",
         "href": "/activities"
     },
     "plages" : {
         "title": "Ses plages",
-        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+        "text": "De vastes étendues de sable, des criques isolées et des plages animées : la région de Santa Marta propose une diversité parfaite pour tous les goûts. Que vous cherchiez détente, baignade ou ambiance festive, chaque plage a son charme unique.",
         "linkText": "En savoir plus",
         "href": "/activities"
     },
     "jungle" : {
         "title": "Sa jungle",
-        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ab delectus, reiciendis fugit beatae adipisci neque vitae ea inventore corporis corrupti, tempora quas excepturi optio ut facere earum molestias perferendis!",
+        "text": "Plongez au cœur de la jungle de Magdalena, un écosystème riche en biodiversité. Sentiers ombragés, cascades cachées et faune tropicale vous attendent pour des aventures inoubliables, à quelques minutes de votre séjour.",
         "linkText": "En savoir plus",
         "href": "/activities"
     }

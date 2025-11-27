@@ -7,13 +7,13 @@ const MotionNavLink = motion.create(NavLink);
 export default function RegionCard( {source, alt, title, text, linkText, linkUrl} ) {
     
     return(
-        <section className="region-card">
+        <section className={`region-card`}>
             <motion.img
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
                 viewport={{ once: true, amount: 0.5 }} 
                 transition={{ duration: 0.5 }}
-                className="region-card__image" 
+                className={`region-card__image region-card__image--${title}`}
                 src={source} 
                 alt={alt} 
             />

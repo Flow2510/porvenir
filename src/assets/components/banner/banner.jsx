@@ -11,7 +11,7 @@ export default function Banner({ source, alt, title }){
                 alt={alt} 
             />
             <div className='banner__content'>
-                <motion.h2
+                <motion.h1
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
                     viewport={{ once: true, amount: 0.5 }} 
@@ -19,7 +19,7 @@ export default function Banner({ source, alt, title }){
                     className='banner__content-title'
                 >
                     {title}
-                </motion.h2>
+                </motion.h1>
             </div>
         </section>
     )

@@ -52,9 +52,7 @@ export default function Form(){
     const [messageError, setMessageError] = useState(false);
     const [formOutput, setFormOutput] = useState({});
 
-    useEffect(() => {
-        console.log(formOutput);
-    }, [formOutput])
+    // plus qu'a demander a une api d'envoyer un mail
 
     return(
         <form action="" className='form' onSubmit={handleSubmit}>

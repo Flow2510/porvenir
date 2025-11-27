@@ -9,7 +9,13 @@ export default function Footer() {
     const { t } = useTranslation('common')
 
     return(
-        <footer className='footer'>
+        <motion.footer 
+            initial={{ y: 50 }} 
+            whileInView={{ y: 0 }} 
+            viewport={{ once: true, amount: 0.5 }} 
+            transition={{ duration: 0.5 }}
+            className='footer'
+        >
             <NavLink className='footer__logo'>
                 <motion.img
                     initial={{ y: 50 }} 
@@ -96,6 +102,6 @@ export default function Footer() {
                     <i className="fa-brands fa-whatsapp"></i>
                 </motion.a>
             </div>
-        </footer>
+        </motion.footer>
     )
 }

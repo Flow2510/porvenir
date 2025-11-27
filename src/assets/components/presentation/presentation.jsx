@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './presentation.scss';
 // eslint-disable-next-line
 import { motion } from 'motion/react';
+const MotionNavLink = motion.create(NavLink);
 
 export default function Presentation({ title, text1, text2, link1, linkText1, link2, linkText2, images }) {
     return(
@@ -35,7 +36,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                     {text2}
                 </motion.p>
                 <div className='presentation__content-wrapper'>
-                    <motion.NavLink 
+                    <MotionNavLink 
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
                         viewport={{ once: true, amount: 0.5 }} 
@@ -44,8 +45,8 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                         to={link1}
                     >
                         {linkText1}
-                    </motion.NavLink>
-                    <motion.NavLink 
+                    </MotionNavLink>
+                    <MotionNavLink 
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
                         viewport={{ once: true, amount: 0.5 }} 
@@ -54,7 +55,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                         to={link2}
                     >
                         {linkText2}
-                    </motion.NavLink>
+                    </MotionNavLink>
                 </div>
             </div>
             <div className='presentation__gallery'>

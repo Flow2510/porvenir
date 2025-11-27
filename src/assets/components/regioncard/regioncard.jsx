@@ -2,8 +2,10 @@ import { NavLink } from 'react-router-dom';
 import './regioncard.scss';
 // eslint-disable-next-line
 import { motion } from 'motion/react';
+const MotionNavLink = motion.create(NavLink);
 
 export default function RegionCard( {source, alt, title, text, linkText, linkUrl} ) {
+    
     return(
         <section className="region-card">
             <motion.img
@@ -34,7 +36,7 @@ export default function RegionCard( {source, alt, title, text, linkText, linkUrl
                 >
                     {text}
                 </motion.p>
-                <motion.NavLink 
+                <MotionNavLink 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
                     viewport={{ once: true, amount: 0.5 }} 
@@ -43,7 +45,7 @@ export default function RegionCard( {source, alt, title, text, linkText, linkUrl
                     className="region-card__link"
                 >
                     {linkText}
-                </motion.NavLink>
+                </MotionNavLink>
             </div>
         </section>
     )

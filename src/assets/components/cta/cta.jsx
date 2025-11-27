@@ -5,7 +5,13 @@ import { motion } from 'motion/react';
 
 export default function Cta({ title, text, linkUrl1, linkUrl2, linkText1, linkText2 }) {
     return(
-        <section className='cta'>
+        <motion.section 
+            initial={{ y: 50 }} 
+            whileInView={{ y: 0 }} 
+            viewport={{ once: true, amount: 0.5 }} 
+            transition={{ duration: 0.5 }}
+            className='cta'
+        >
             <motion.div 
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
@@ -20,7 +26,6 @@ export default function Cta({ title, text, linkUrl1, linkUrl2, linkText1, linkTe
                     <NavLink className="cta__content-link" to={linkUrl2}>{linkText2}</NavLink>
                 </div>
             </motion.div>
-            
-        </section>
+        </motion.section>
     )
 }

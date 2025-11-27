@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './location.scss';
 // eslint-disable-next-line
 import { motion } from 'motion/react';
+const MotionNavLink = motion.create(NavLink);
 
 export default function Location({ title, source, alt, textLocation, imagesList, link1, linkText1, link2, linkText2 }) {
     return(
@@ -44,7 +45,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 </motion.li>
             </ul>
             <div className='location__link-wrapper'>
-                <motion.NavLink 
+                <MotionNavLink 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
                     viewport={{ once: true, amount: 0.5 }} 
@@ -53,8 +54,8 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                     to={link1}
                 >
                     {linkText1}
-                </motion.NavLink>
-                <motion.NavLink 
+                </MotionNavLink>
+                <MotionNavLink 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
                     viewport={{ once: true, amount: 0.5 }} 
@@ -62,7 +63,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                     className="location__link" to={link2}
                 >
                     {linkText2}
-                </motion.NavLink>
+                </MotionNavLink>
             </div>
             <div className='location__gallery'>
                 {imagesList.map((img, index) => (

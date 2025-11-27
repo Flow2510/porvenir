@@ -2,9 +2,12 @@ import { useTranslation } from "react-i18next";
 import Banner from "../assets/components/banner/banner";
 import LocationsIntro from "../assets/components/locationintro/locationsintro";
 import Activity from "../assets/components/activity/activity";
+import Cta from "../assets/components/cta/cta";
 
 export default function Activities() {
     const { t } = useTranslation('activities');
+    const { t: tCta } = useTranslation('cta');
+
     const townActivities = [
         {
             title : "Visitez la ville de Santa Marta",
@@ -98,6 +101,14 @@ export default function Activities() {
                 alt="Santa Marta"
                 activities={townActivities}
             />
+            <Cta 
+                            title={tCta('title')}CtaCta
+                            text={tCta('text')}
+                            linkUrl1={tCta('linkUrl1')}
+                            linkUrl2={tCta('linkUrl2')}
+                            linkText1={tCta('linkText1')}
+                            linkText2={tCta('linkText2')}
+                        />
             <Activity 
                 title={t('activityTitle2')}
                 text={t('activityText2')}
@@ -105,6 +116,14 @@ export default function Activities() {
                 alt="plage a proximité de Santa Marta"
                 activities={beachActivities}
             />
+            <Cta 
+                            title={tCta('title')}
+                            text={tCta('text')}
+                            linkUrl1={tCta('linkUrl1')}
+                            linkUrl2={tCta('linkUrl2')}
+                            linkText1={tCta('linkText1')}
+                            linkText2={tCta('linkText2')}
+                        />
             <Activity 
                 title={t('activityTitle3')}
                 text={t('activityText3')}

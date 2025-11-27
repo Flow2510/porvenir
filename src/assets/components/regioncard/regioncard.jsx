@@ -11,7 +11,7 @@ export default function RegionCard( {source, alt, title, text, linkText, linkUrl
             <motion.img
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0.5 }} 
+                viewport={{ once: true, amount: 0 }} 
                 transition={{ duration: 0.5 }}
                 className={`region-card__image region-card__image--${title}`}
                 src={source} 
@@ -21,7 +21,7 @@ export default function RegionCard( {source, alt, title, text, linkText, linkUrl
                 <motion.h3
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className="region-card__content-title"
                 >
@@ -30,7 +30,7 @@ export default function RegionCard( {source, alt, title, text, linkText, linkUrl
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className="region-card__content-text"
                 >
@@ -39,7 +39,7 @@ export default function RegionCard( {source, alt, title, text, linkText, linkUrl
                 <MotionNavLink 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     to={linkUrl} 
                     className="region-card__link"

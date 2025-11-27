@@ -60,7 +60,7 @@ export default function Form(){
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='form__label-subtitle'
                 >
@@ -69,7 +69,7 @@ export default function Form(){
                 <motion.input
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }} 
                     className={`form__label-input${nameError? " form__label-input--error" : ""}`} 
                     onChange={(e) => setName(e.target.value)}
@@ -85,7 +85,7 @@ export default function Form(){
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }} 
                     className='form__label-subtitle'
                 >
@@ -94,7 +94,7 @@ export default function Form(){
                 <motion.input
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className={`form__label-input${emailError? " form__label-input--error" : ""}`} 
                     onChange={(e) => setEmail(e.target.value)}
@@ -110,7 +110,7 @@ export default function Form(){
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }} 
                     className='form__label-subtitle'
                 >
@@ -119,7 +119,7 @@ export default function Form(){
                 <motion.input
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className={`form__label-input${subjectError? " form__label-input--error" : ""}`} 
                     onChange={(e) => setSubject(e.target.value)}
@@ -133,7 +133,7 @@ export default function Form(){
                 <motion.p 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='form__label-subtitle'
                 >
@@ -142,7 +142,7 @@ export default function Form(){
                 <motion.textarea
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }} 
                     className={`form__label-textarea${messageError? " form__label-textarea--error" : ""}`} 
                     onChange={(e) => setMessage(e.target.value)}
@@ -156,7 +156,7 @@ export default function Form(){
             <motion.button 
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0.5 }} 
+                viewport={{ once: true, amount: 0 }} 
                 transition={{ duration: 0.5 }}
                 className='form__button' 
                 type='submit'

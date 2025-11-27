@@ -42,7 +42,7 @@ export default function Locations() {
     return(
         <>
             <Banner
-                source='/src/assets/images/patio.avif'
+                source='/src/assets/images/jardin3.png'
                 alt="patio de l'auberge del Porvenir"
                 title={t('pageTitle')}
             />

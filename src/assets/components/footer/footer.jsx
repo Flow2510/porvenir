@@ -12,7 +12,7 @@ export default function Footer() {
         <motion.footer 
             initial={{ y: 50 }} 
             whileInView={{ y: 0 }} 
-            viewport={{ once: true, amount: 0.5 }} 
+            viewport={{ once: true, amount: 0 }} 
             transition={{ duration: 0.5 }}
             className='footer'
         >
@@ -20,7 +20,7 @@ export default function Footer() {
                 <motion.img
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__logo-image' 
                     src={logo} 
@@ -29,7 +29,7 @@ export default function Footer() {
                 <motion.h1
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__logo-title'
                 >
@@ -40,7 +40,7 @@ export default function Footer() {
                 <motion.h4
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__content-title'
                 >
@@ -49,7 +49,7 @@ export default function Footer() {
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__content-text'
                 >
@@ -58,7 +58,7 @@ export default function Footer() {
                 <motion.a
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__content-link' 
                     target='__blank' 
@@ -71,7 +71,7 @@ export default function Footer() {
                 <motion.a
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__social-link' 
                     href="https://www.facebook.com" 
@@ -82,7 +82,7 @@ export default function Footer() {
                 <motion.a
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__social-link' 
                     href="https://www.instagram.com" 
@@ -93,7 +93,7 @@ export default function Footer() {
                 <motion.a
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='footer__social-link'
                     href="https://www.whatsapp.com"

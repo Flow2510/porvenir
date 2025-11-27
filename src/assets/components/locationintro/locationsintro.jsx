@@ -9,7 +9,7 @@ export default function LocationsIntro({title, text}) {
                 <motion.h2 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='locations-intro__content-title'
                 >
@@ -18,7 +18,7 @@ export default function LocationsIntro({title, text}) {
                 <motion.p 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='locations-intro__content-text'
                 >

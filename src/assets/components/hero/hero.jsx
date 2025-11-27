@@ -13,13 +13,13 @@ export default function Hero() {
                 <motion.h2 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='hero__content-title'>{t('title')}</motion.h2>
                 <motion.p 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='hero__content-text'>{t('text')}</motion.p>
             </div>

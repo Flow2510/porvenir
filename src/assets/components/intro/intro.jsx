@@ -26,7 +26,7 @@ export default function Intro(){
                 <motion.h2 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                 >
                     {t('title')}
@@ -34,7 +34,7 @@ export default function Intro(){
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                 >
                     {t('text')}</motion.p>
@@ -44,7 +44,7 @@ export default function Intro(){
                     <motion.img 
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
-                        viewport={{ once: true, amount: 0.5 }} 
+                        viewport={{ once: true, amount: 0 }} 
                         transition={{ duration: 0.5 }}
                         className='intro__gallery-image' 
                         key={image.source + index} 

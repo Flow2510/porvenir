@@ -11,7 +11,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 <motion.h3
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                 >
                     {title}
@@ -19,7 +19,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 <motion.img
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='location__content-image' 
                     src={source} 
@@ -28,7 +28,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 <motion.p
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                 >
                     {textLocation}
@@ -38,7 +38,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 <motion.li
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                 >
                     faire liste d'equipements
@@ -48,7 +48,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 <MotionNavLink 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className="location__link" 
                     to={link1}
@@ -58,7 +58,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 <MotionNavLink 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className="location__link" to={link2}
                 >
@@ -70,7 +70,7 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                     <motion.img
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
-                        viewport={{ once: true, amount: 0.5 }} 
+                        viewport={{ once: true, amount: 0 }} 
                         transition={{ duration: 0.5 }}
                         key={img.name + index} 
                         className='location__gallery-image' 

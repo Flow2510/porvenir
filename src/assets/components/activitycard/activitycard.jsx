@@ -8,7 +8,7 @@ export default function ActivityCard({ title, text, source, alt }) {
             <motion.h4 
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0.5 }} 
+                viewport={{ once: true, amount: 0 }} 
                 transition={{ duration: 0.5 }}
                 className='activity-card__title'
             >
@@ -17,7 +17,7 @@ export default function ActivityCard({ title, text, source, alt }) {
             <motion.img 
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0.5 }} 
+                viewport={{ once: true, amount: 0 }} 
                 transition={{ duration: 0.5 }}
                 className='activity-card__image' 
                 src={source} 
@@ -26,7 +26,7 @@ export default function ActivityCard({ title, text, source, alt }) {
             <motion.p 
                 initial={{ y: 50 }} 
                 whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0.5 }} 
+                viewport={{ once: true, amount: 0 }} 
                 transition={{ duration: 0.5 }}
                 className='activity-card__text'
             >

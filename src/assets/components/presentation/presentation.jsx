@@ -11,7 +11,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                 <motion.h2 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='presentation__content-title'
                 >
@@ -20,7 +20,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                 <motion.p 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='presentation__content-text'
                 >
@@ -29,7 +29,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                 <motion.p 
                     initial={{ y: 50 }} 
                     whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0.5 }} 
+                    viewport={{ once: true, amount: 0 }} 
                     transition={{ duration: 0.5 }}
                     className='presentation__content-text'
                 >
@@ -39,7 +39,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                     <MotionNavLink 
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
-                        viewport={{ once: true, amount: 0.5 }} 
+                        viewport={{ once: true, amount: 0 }} 
                         transition={{ duration: 0.5 }}
                         className="presentation__content-link" 
                         to={link1}
@@ -49,7 +49,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                     <MotionNavLink 
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
-                        viewport={{ once: true, amount: 0.5 }} 
+                        viewport={{ once: true, amount: 0 }} 
                         transition={{ duration: 0.5 }}
                         className="presentation__content-link" 
                         to={link2}
@@ -63,7 +63,7 @@ export default function Presentation({ title, text1, text2, link1, linkText1, li
                     <motion.img 
                         initial={{ y: 50 }} 
                         whileInView={{ y: 0 }} 
-                        viewport={{ once: true, amount: 0.5 }} 
+                        viewport={{ once: true, amount: 0 }} 
                         transition={{ duration: 0.5 }}
                         className='presentation__gallery-image' 
                         key={image.name + index} 

@@ -54,6 +54,7 @@ export default function Locations() {
                 source='/src/assets/images/chambre.avif'
                 alt="alt"
                 textLocation={t('textLocation')}
+                equipements={t('list', { returnObjects: true })}
                 imagesList={imagesChambre}
                 link1={'/reservation'}
                 linkText1={t('linkText1')}
@@ -73,6 +74,7 @@ export default function Locations() {
                 source='/src/assets/images/dortoir2.jpeg'
                 alt="alt"
                 textLocation={t('textLocation2')}
+                equipements={t('list2', { returnObjects: true })}
                 imagesList={imagesDortoir}
                 link1={'/reservation'}
                 linkText1={t('linkText1')}

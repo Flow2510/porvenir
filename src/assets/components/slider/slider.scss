@@ -5,12 +5,25 @@
     margin: auto;
     padding: 1rem;
 
-    &__image{
+    &__button{
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
         width: 100%;
-        aspect-ratio: 1 / 0.5;
-        padding: 0 2rem;
-        object-fit: cover;
-        display: block;
+
+        &-image{
+            width: 100%;
+            aspect-ratio: 1 / 0.5;
+            padding: 0 1rem;
+            object-fit: cover;
+            display: block;
+
+            @media screen and (min-width:768px) {
+                padding: 0 1.5rem;
+            }
+        }
     }
 
     &__arrows{
@@ -48,6 +61,26 @@
                 background-color: #2C5B5B;
                 border: none;
             }
+        }
+    }
+
+    &__modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        z-index: 100;
+        background: #00000077;
+        border: none;
+        cursor: pointer;
+
+        &-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

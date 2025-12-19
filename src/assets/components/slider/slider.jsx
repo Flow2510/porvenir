@@ -4,6 +4,7 @@ import { useState } from 'react';
 export default function Slider({images}) {
     const [sliderIndex, setSliderIndex] = useState(0);
     const totalSlides = images.length;
+    const [showImage, setShowImage] = useState(false);
 
     const handleClickNext = () => {
         setSliderIndex((prev) =>
@@ -19,7 +20,14 @@ export default function Slider({images}) {
 
     return(
         <section className='slider'>
-            <img className='slider__image' src={images[sliderIndex].source} alt={images[sliderIndex].alt} />
+            <button className='slider__button' onClick={() => setShowImage(prev => !prev)}>
+                <img className='slider__button-image' src={images[sliderIndex].source} alt={images[sliderIndex].alt} />
+            </button>
+            {showImage &&
+                <button onClick={() => setShowImage(prev => !prev)} className='slider__modal'>
+                    <img className='slider__modal-image' src={images[sliderIndex].source} alt="" />
+                </button>
+            }
             <div className='slider__arrows'>
                 <button className='slider__arrows-arrow' onClick={handleClickBack}><i className="fa-solid fa-chevron-left"></i></button>
                 <button className='slider__arrows-arrow' onClick={handleClickNext}><i className="fa-solid fa-chevron-right"></i></button>

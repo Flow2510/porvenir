@@ -3,6 +3,7 @@ import './header.scss'
 import logo from "../../images/logo.png"
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Trad from '../trad/trad';
 
 const menuKeys = [
     'accueil', 
@@ -18,11 +19,11 @@ export default function Header() {
     const { t, i18n } = useTranslation('common');
     const [showMenu, setShowMenu] = useState(false);
 
-    const toggleLanguage = () => {
-        const newLang = i18n.language === 'fr' ? 'es' : 'fr';
+    const handleSelectLanguage = (e) => {
+        const newLang = e.target.value;
         i18n.changeLanguage(newLang); 
-    };
-    
+    }
+
     const getTargetLangDisplay = () => {
         return i18n.language === 'fr' ? 'Español' : 'Français';
     };
@@ -46,29 +47,27 @@ export default function Header() {
                         </NavLink>
                     ))}
                 </nav>
-
-                <button 
-                    className='header__language-desktop'
-                    onClick={toggleLanguage}
-                >
-                    {getTargetLangDisplay()}
-                </button>
-
-                <button className='header__button' onClick={() => setShowMenu(prev => !prev)}>
-                    {showMenu? 
-                        <>
-                            <div className='header__button-bar header__button-bar1--active'></div>
-                            <div className='header__button-bar header__button-bar2--active'></div>
-                            <div className='header__button-bar header__button-bar3--active'></div>
-                        </>
-                        :
-                        <>
-                            <div className='header__button-bar header__button-bar1'></div>
-                            <div className='header__button-bar header__button-bar2'></div>
-                            <div className='header__button-bar header__button-bar3'></div>
-                        </>
-                    }
-                </button>
+                <div className='header__button-wrapper'>
+                    <Trad 
+                        handleSelectLanguage={handleSelectLanguage}
+                        getTargetLangDisplay={getTargetLangDisplay}
+                    />
+                    <button className='header__button' onClick={() => setShowMenu(prev => !prev)}>
+                        {showMenu? 
+                            <>
+                                <div className='header__button-bar header__button-bar1--active'></div>
+                                <div className='header__button-bar header__button-bar2--active'></div>
+                                <div className='header__button-bar header__button-bar3--active'></div>
+                            </>
+                            :
+                            <>
+                                <div className='header__button-bar header__button-bar1'></div>
+                                <div className='header__button-bar header__button-bar2'></div>
+                                <div className='header__button-bar header__button-bar3'></div>
+                            </>
+                        }
+                    </button>
+                </div>
             </header>
 
             <nav className={`header__nav-mobile${showMenu? " header__nav-mobile--active" : ""}`}>
@@ -89,12 +88,6 @@ export default function Header() {
                     <a className='header__social-link' href="https://www.whatsapp.com" target='__blank'><i className="fa-brands fa-whatsapp"></i></a>
                 </div>
 
-                <button 
-                    className='header__language-mobile'
-                    onClick={toggleLanguage}
-                >
-                    {getTargetLangDisplay()}
-                </button>
             </nav>
         </>
     );

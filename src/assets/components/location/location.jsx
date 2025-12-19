@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 import Slider from '../slider/slider';
 const MotionNavLink = motion.create(NavLink);
 
-export default function Location({ title, source, alt, textLocation, imagesList, link1, linkText1, link2, linkText2 }) {
+export default function Location({ title, source, alt, textLocation, imagesList, link1, linkText1, link2, linkText2, equipements }) {
     return(
         <section className='location'>
             <div className='location__content'>
@@ -36,14 +36,17 @@ export default function Location({ title, source, alt, textLocation, imagesList,
                 </motion.p>
             </div>
             <ul className='location__list'> 
-                <motion.li
-                    initial={{ y: 50 }} 
-                    whileInView={{ y: 0 }} 
-                    viewport={{ once: true, amount: 0 }} 
-                    transition={{ duration: 0.5 }}
-                >
-                    faire liste d'equipements
-                </motion.li>
+                {equipements.map((e, index) => (
+                    <motion.li 
+                        key={e + index}
+                        initial={{ y: 50 }} 
+                        whileInView={{ y: 0 }} 
+                        viewport={{ once: true, amount: 0 }} 
+                        transition={{ duration: 0.5 }}
+                    >
+                        {e}
+                    </motion.li>
+                ))}
             </ul>
             <div className='location__link-wrapper'>
                 <MotionNavLink 

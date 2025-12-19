@@ -46,25 +46,10 @@
         }
     }
 
-    &__language{
-
-        &-desktop{
-            display: none;
-        }
-
-        &-mobile{
-            width: fit-content;
-            margin: 0.25rem 0;
-            padding: 0.5rem 0.8rem;
-            background: white;
-            color: #2C5B5B;
-            border: 1px solid;
-
-            &:hover{
-                background: #2C5B5B;
-                color: white;
-            }
-        }
+    &__button-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 
     &__button{

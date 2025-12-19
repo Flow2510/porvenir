@@ -21,9 +21,13 @@
 
         &-image{
             width: 100%;
-            aspect-ratio: 1;
+            aspect-ratio: 1 / 0.6;
             object-fit: cover;
             display: block;
+
+            @media screen and (min-width:768px){
+                aspect-ratio: 1 / 0.5;
+            }
         }
     }
 
@@ -44,19 +48,6 @@
             background: white;
             border-color: #2C5B5B;
             color: #2C5B5B;
-        }
-    }
-
-    &__gallery{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        &-image{
-            width: 100%;
-            aspect-ratio: 1;
-            object-fit: cover;
-            display: block;
         }
     }
 }

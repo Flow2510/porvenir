@@ -7,5 +7,11 @@
     "linkText1": "Réservation",
     "linkText2": "Contact",
     "titleLocation2" : "Dortoir",
-    "textLocation2" : "Notre dortoir convivial est parfait pour les voyageurs seuls ou les petits groupes à la recherche d’une option économique sans sacrifier le confort. L’ambiance chaleureuse et l’emplacement au cœur de la jungle permettent de profiter d’un séjour authentique et proche de la nature."
+    "textLocation2" : "Notre dortoir convivial est parfait pour les voyageurs seuls ou les petits groupes à la recherche d’une option économique sans sacrifier le confort. L’ambiance chaleureuse et l’emplacement au cœur de la jungle permettent de profiter d’un séjour authentique et proche de la nature.",
+    "title2": "Prêt à réserver votre escapade ?",
+    "text2": "Choisissez vos dates, réservez en quelques clics et assurez-vous une parenthèse inoubliable au cœur de la jungle, à deux pas de Santa Marta.",
+    "linkUrl3": "/reservation",
+    "linkText3": "Réserver maintenant",
+    "linkUrl4": "/contact",
+    "linkText4": "Nous contacter"
 }

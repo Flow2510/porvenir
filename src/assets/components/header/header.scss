@@ -72,9 +72,27 @@
         border: none;
         font-size: 1.2rem;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        transition: transform 0.5s ease-in-out;
 
         @media screen and (min-width:850px){
             display: none;
+        }
+
+        &-bar2{
+
+            &--active{
+                transform: translateX(-6px);
+            }
+        }
+
+        &-bar{
+            height: 2px;
+            width: 20px;
+            background: #2C5B5B;
+            transition: transform 0.5s ease-in-out;
         }
     }
 

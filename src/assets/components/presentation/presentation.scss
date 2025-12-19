@@ -53,7 +53,7 @@
         &-image{
             width: 100%;
             display: block;
-            aspect-ratio: 1;
+            aspect-ratio: 1 / 0.7;
             object-fit: cover;
         }
     }

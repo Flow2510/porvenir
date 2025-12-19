@@ -55,7 +55,19 @@ export default function Header() {
                 </button>
 
                 <button className='header__button' onClick={() => setShowMenu(prev => !prev)}>
-                    {showMenu? <i className="fa-solid fa-bars-staggered"></i> : <i className="fa-solid fa-bars"></i>}
+                    {showMenu? 
+                        <>
+                            <div className='header__button-bar header__button-bar1--active'></div>
+                            <div className='header__button-bar header__button-bar2--active'></div>
+                            <div className='header__button-bar header__button-bar3--active'></div>
+                        </>
+                        :
+                        <>
+                            <div className='header__button-bar header__button-bar1'></div>
+                            <div className='header__button-bar header__button-bar2'></div>
+                            <div className='header__button-bar header__button-bar3'></div>
+                        </>
+                    }
                 </button>
             </header>
 

@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import ActivityCard from '../activitycard/activitycard';
 import './activity.scss';
 
-export default function Activity({title, text, source, alt, activities }) {
+export default function Activity({title, text, activities }) {
 
     return(
         <section className='activity'>
@@ -27,15 +27,6 @@ export default function Activity({title, text, source, alt, activities }) {
                     {text}
                 </motion.p>
             </div>
-            <motion.img 
-                initial={{ y: 50 }} 
-                whileInView={{ y: 0 }} 
-                viewport={{ once: true, amount: 0 }} 
-                transition={{ duration: 0.5 }}
-                className='activity__image' 
-                src={source} 
-                alt={alt} 
-            />
             <div className='activity__cards'>
                 {activities.map((act, index) => (
                     <ActivityCard 

@@ -22,17 +22,24 @@
 
     &__image{
         width: 100%;
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 0.6;
         object-fit: cover;
 
         @media screen and (min-width:768px){
-            aspect-ratio: 1/0.6;
+            aspect-ratio: 1/0.5;
         }
     }
 
     &__cards{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+         @media screen and (min-width:768px){
+            gap: 1rem;
+            row-gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }

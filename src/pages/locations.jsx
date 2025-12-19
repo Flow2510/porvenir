@@ -6,7 +6,6 @@ import Cta from "../assets/components/cta/cta";
 
 export default function Locations() {
     const { t } = useTranslation('locations');
-    const { t: tCta } = useTranslation('cta');
 
     const imagesChambre = [
         {
@@ -62,12 +61,12 @@ export default function Locations() {
                 linkText2={t('linkText2')}
             />
             <Cta 
-                title={tCta('title')}
-                text={tCta('text')}
-                linkUrl1={tCta('linkUrl1')}
-                linkUrl2={tCta('linkUrl2')}
-                linkText1={tCta('linkText1')}
-                linkText2={tCta('linkText2')}
+                title={t('title2')}
+                text={t('text2')}
+                linkUrl1={t('linkUrl3')}
+                linkUrl2={t('linkUrl4')}
+                linkText1={t('linkText3')}
+                linkText2={t('linkText4')}
             />
             <Location 
                 title={t('titleLocation2')}

@@ -1,0 +1,25 @@
+.info{
+    background: #B8A68A;
+    color: #32322B;
+
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+
+        @media screen and (min-width:768px){
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        & > :last-child{
+            grid-column: 1 / span 2;
+
+            @media screen and (min-width:768px){
+                grid-column: 3;
+            }
+        }
+    }
+}

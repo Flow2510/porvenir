@@ -1,0 +1,34 @@
+.cta{
+    padding: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    max-width: 600px;
+    margin: auto;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &-text{
+            line-height: 200%;
+        }
+    }
+
+    &__button{
+        padding: 1.2rem 3.5rem;
+        font-size: 1rem;
+        background: #32322B;
+        color: #FDFCFA;
+        border: none;
+        display: flex;
+        gap: 0.5rem;
+
+        span{
+            transform: translateY(-2px);
+        }
+    }
+}

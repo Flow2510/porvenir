@@ -1,0 +1,41 @@
+.presentation{
+    background: #32322B;
+    color: #B8A68A;
+    position: relative;
+
+    &__content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+
+    &__gallery{
+
+        @media screen and (min-width:768px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-video{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            display: block;
+            
+            @media screen and (min-width:768px){
+                position: sticky;
+                height: 100vh;
+                top: 0;
+            }
+        }
+
+        &-image{
+            display: block;
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+        }
+    }
+}

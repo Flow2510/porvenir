@@ -1,0 +1,37 @@
+.intro{
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 200%;
+
+    @media screen and (min-width:768px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+        padding: 5rem 3rem;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        @media screen and (min-width:768px){
+            padding-right: 4rem;
+            
+        }
+    }
+
+    &__video{
+        width: 100%;
+        object-fit: cover;
+        margin: 2rem 0;
+
+        @media screen and (min-width:768px){
+            height: 100%;
+            margin: 0;
+        }
+    }
+}

@@ -1,9 +1,9 @@
 import './features.scss';
 
 const images = [
-    "/src/assets/images/patio3.avif",
-    "/src/assets/images/cuisine.avif",
-    "/src/assets/images/terrasse2.webp"
+    "/src/assets/images/escalier-jungle.jpg",
+    "/src/assets/images/terrasse.jpg",
+    "/src/assets/images/chambre-volet.jpg"
     
 ]
 

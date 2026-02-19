@@ -1,10 +1,10 @@
 import './presentation.scss';
 
 const images = [
-    "/src/assets/images/jardin3.png",
-    "/src/assets/images/patio.avif",
-    "/src/assets/images/jardin.avif",
-    "/src/assets/images/chambre.avif"
+    "/src/assets/images/cabane-crepuscule.jpg",
+    "/src/assets/images/jardin-piscine.jpg",
+    "/src/assets/images/patio.jpg",    
+    "/src/assets/images/habitation.jpg"
 ]
 
 export default function Presentation() {

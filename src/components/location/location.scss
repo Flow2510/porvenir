@@ -1,16 +1,21 @@
 .location{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 5rem 1.5rem;
     background: #32322B;
     color: #E1D9CA;
 
-    @media screen and (min-width: 768px){
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 5rem 3rem;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5rem 1.5rem;
+        max-width: 1400px;
+        margin: auto;
+
+        @media screen and (min-width: 768px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 5rem 3rem;
+        }
     }
 
     &__content{
@@ -41,7 +46,16 @@
             display: flex;
             justify-content: space-between;
             padding: 1rem 0;
-            border-bottom: 1px solid #e1d9ca25;
+            border-bottom: 1px solid #e1d9ca25; 
+        }
+
+
+        &-text{
+            font-size: 0.9rem;
+
+            &:nth-child(1){
+                color: #B8A68A;
+            }
         }
     }
 
@@ -49,9 +63,6 @@
         width: 100%;
         object-fit: cover;
         height: 550px;
-
-        @media screen and (min-width: 768px){
-            
-        }
+        padding: 1rem 0 0 0;
     }
 }

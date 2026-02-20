@@ -1,3 +1,4 @@
+import { motion } from 'motion/react'
 import Review from '../review/review'
 import './reviews.scss'
 
@@ -32,8 +33,24 @@ export default function Reviews() {
     return(
         <section className='reviews'>
             <div className='reviews__content'>
-                <h2 className='reviews__content-title'>Title</h2>
-                <p className='reviews__content-subtitle'>Subtitle</p>
+                <motion.h2 
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='reviews__content-title'
+                >
+                    Title
+                </motion.h2>
+                <motion.p 
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='reviews__content-subtitle'
+                >
+                    Subtitle
+                </motion.p>
             </div>
             <div className='reviews__gallery'>
                 {reviews.map((review, index) => (

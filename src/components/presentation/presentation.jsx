@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import './presentation.scss';
 
 const images = [
@@ -11,8 +12,24 @@ export default function Presentation() {
     return(
         <section className='presentation'>
             <div className='presentation__content'>
-                <h2 className='presentation__content-title'>Title</h2>
-                <p className='presentation__content-subtitle'>Subtitle</p>
+                <motion.h2 
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='presentation__content-title'
+                >
+                    Title
+                </motion.h2>
+                <motion.p 
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='presentation__content-subtitle'
+                >
+                    Subtitle
+                </motion.p>
             </div>
             <div className='presentation__gallery'>
                 <video loop muted autoPlay className='presentation__gallery-video' src="/src/assets/video/jungle.mp4"></video>

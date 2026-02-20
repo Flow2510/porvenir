@@ -1,5 +1,6 @@
 import './stats.scss';
 import Stat from '../stat/stat';
+import { motion } from 'motion/react';
 
 const stats = [
     {
@@ -22,7 +23,13 @@ const stats = [
 
 export default function Stats() {
     return(
-        <section className='stats'>
+        <motion.section 
+            className='stats'
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y:0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true, amount: 1 }}    
+        >
             {stats.map((stat, index) => (
                 <Stat
                     key={stat.subtitle + index}
@@ -30,6 +37,6 @@ export default function Stats() {
                     number={stat.number}
                 />
             ))}
-        </section>
+        </motion.section>
     )
 }

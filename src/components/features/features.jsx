@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import './features.scss';
 
 const images = [
@@ -20,18 +21,41 @@ export default function Features() {
     return(
         <section className='features'>
             <div className='features__content'>
-                <h2 className='features__content-title'>Title</h2>
+                <motion.h2 
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='features__content-title'
+                >
+                    Title
+                </motion.h2>
                 <ul className='features__content-list'>
                     {equipments.map((equipment, index) => (
-                        <li className='features__content-item' key={equipment + index}><span>→</span> {equipment}</li>
+                        <motion.li 
+                            className='features__content-item' 
+                            initial={{ opacity: 0, y: 25 }}
+                            whileInView={{ opacity: 1, y:0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            key={equipment + index}
+                        >
+                            <span>→</span> {equipment}
+                        </motion.li>
                     ))}
                 </ul>
             </div>
-            <div className='features__gallery'>
+            <motion.div 
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y:0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.1 }}
+                className='features__gallery'
+            >
                 {images.map((image, index) => (
                     <img className='features__gallery-image' src={image} key={image + index} alt="" />
                 ))}
-            </div>
+            </motion.div>
         </section>
     )
 }

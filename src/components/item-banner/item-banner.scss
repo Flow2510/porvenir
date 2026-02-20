@@ -1,0 +1,12 @@
+.item-banner{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    color: #FDFCFA;
+    
+    &__line{
+        height: 1px;
+        width: 2rem;
+        background: #fdfcfa50;
+    }
+}

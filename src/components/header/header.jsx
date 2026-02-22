@@ -1,25 +1,31 @@
 import { useState, useEffect } from 'react'
 import './header.scss'
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
-export default function Header({ setLanguage }) {
+export default function Header() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
+    const { t, i18n } = useTranslation("header")
 
     const languages = [
         {
-            value: "FR",
+            value: "fr",
             flag: "🇫🇷"
         },
         {
-            value: "ES",
+            value: "es",
             flag: "🇪🇸"
         },
         {
-            value: "FR",
+            value: "gb",
             flag: "🇬🇧"
         }
     ]
+
+    const setLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,15 +41,25 @@ export default function Header({ setLanguage }) {
             <header className={`header${scrolled ? " header--scrolled" : ""}`}>
                 <h1 className={`header__logo${menuIsOpen? ' header__logo--open' : ''}`}>Logo</h1>
                 <nav className='header__nav'>
-                    <NavLink className={'header__nav-link'} to={'/'}>Home</NavLink>
-                    <NavLink className={'header__nav-link'} to={'/rooms'}>Rooms</NavLink>
-                    <NavLink className={'header__nav-link'} to={'/about'}>About</NavLink>
-                    <NavLink className={'header__nav-link'} to={'/reservation'}>Reservation</NavLink>
-                    <NavLink className={'header__nav-link'} to={'/localisation'}>Localisation</NavLink>
-                    <NavLink className={'header__nav-link header__nav-link--contact'} to={'/contact'}>Contact</NavLink>
-                    <select className='header__select' name="" id="" onChange={(e) => setLanguage(e.target.value)}>
+                    <NavLink className={'header__nav-link'} to={'/'}>{t("nav.home")}</NavLink>
+                    <NavLink className={'header__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
+                    <NavLink className={'header__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
+                    <NavLink className={'header__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
+                    <NavLink className={'header__nav-link'} to={'/localisation'}>{t("nav.localisation")}</NavLink>
+                    <NavLink className={'header__nav-link header__nav-link--contact'} to={'/contact'}>{t("nav.contact")}</NavLink>
+                    <select
+                        className='header__select'
+                        onChange={(e) => setLanguage(e.target.value)}
+                        value={i18n.language}
+                    >
                         {languages.map((lang, index) => (
-                            <option key={lang.value + index} className='header__select-option' value={lang.value}>{lang.flag}</option>
+                        <option
+                            key={lang.value + index}
+                            className='header__select-option'
+                            value={lang.value}
+                        >
+                            {lang.flag}
+                        </option>
                         ))}
                     </select>
                 </nav>

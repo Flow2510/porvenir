@@ -18,10 +18,14 @@
 
         &-logo{
             font-weight: 400;
+            line-height: 100%;
         }
 
         &-subtitle{
             color: #767460;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
         }
     }
     

@@ -8,16 +8,15 @@ import Reservation from './pages/reservation'
 import Rooms from './pages/rooms'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
-import { useState } from 'react'
+import "./i18n";
 
 function App() {
-  const [language, setLanguage] = useState("FR")
 
   return (
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<Home setLanguage={setLanguage} />}/>
+        <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/localisation' element={<Localisation />}/>

@@ -13,7 +13,11 @@ export default function Footer() {
                 className='footer__content'
             >
                 <h1 className='footer__content-logo'>Logo</h1>
-                <p className='footer__content-subtitle'>Subtitle text</p>
+                <p className='footer__content-subtitle'>
+                    <span>Carretera vereda el Porvenir, Via a Minca</span>
+                    <span>Santa Marta, Magdalena</span>
+                    <span>Colombia</span>
+                </p>
             </motion.div>
             <motion.nav 
                 initial={{ opacity: 0, y: 25 }}

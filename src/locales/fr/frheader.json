@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "rooms": "Chambres",
+    "about": "À propos",
+    "reservation": "Réservation",
+    "localisation": "Localisation",
+    "contact": "Contact"
+  }
+}

@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .features{
     padding: 3rem 1.5rem 0rem;
     display: flex;
@@ -12,6 +14,7 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
         padding: 3rem;
+        gap: 2rem;
     }
 
     &__content{
@@ -21,12 +24,12 @@
 
         @media screen and (min-width: 768px){
             position: sticky;
-            top: 6rem;
+            top: 7rem;
             left: 0rem;
         }
 
         &-title{
-            color: #32322B;
+            color: $smoke;
         }
 
         &-list{
@@ -39,6 +42,11 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            border-bottom: 1px solid #32322b45;
+
+            &:nth-child(1){
+                border-top: 1px solid #32322b45;
+            }
         }
     }
 

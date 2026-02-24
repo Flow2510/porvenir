@@ -5,16 +5,15 @@ const images = [
     "/src/assets/images/escalier-jungle.jpg",
     "/src/assets/images/terrasse.jpg",
     "/src/assets/images/chambre-volet.jpg"
-    
 ]
 
 const equipments = [
-    "equipment 1",
-    "equipment 2",
-    "equipment 3",
-    "equipment 4",
-    "equipment 5",
-    "equipment 6"
+    "Wi-Fi gratuit dans tout l’établissement",
+    "Restauration sur place, avec possibilité de profiter de repas faits maison",
+    "Cuisine équipée, salle à manger et espace détente commun pour partager des moments conviviaux",
+    "Piscine extérieure idéale pour se rafraîchir sous le soleil caribéen",
+    "Vélos à disposition pour explorer les environs en toute liberté",
+    "Patio et terrasse abritée, au cœur d’un jardin propice à la détente"
 ]
 
 export default function Features() {
@@ -28,8 +27,17 @@ export default function Features() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='features__content-title'
                 >
-                    Title
+                    Détente et Liberté
                 </motion.h2>
+                <motion.p 
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y:0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className='features__content-subtitle'
+                >
+                    Tout est réuni pour vivre un séjour simple, confortable et apaisant.
+                </motion.p>
                 <ul className='features__content-list'>
                     {equipments.map((equipment, index) => (
                         <motion.li 

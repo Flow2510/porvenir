@@ -40,7 +40,7 @@ export default function Reviews() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='reviews__content-title'
                 >
-                    Title
+                    Ce que nos clients disent
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 25 }}
@@ -49,7 +49,7 @@ export default function Reviews() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='reviews__content-subtitle'
                 >
-                    Subtitle
+                    Des expériences authentiques partagées par nos voyageurs.
                 </motion.p>
             </div>
             <div className='reviews__gallery'>

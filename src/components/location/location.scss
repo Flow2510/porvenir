@@ -1,7 +1,13 @@
+@use "../../styles/variables" as *;
+
 .location{
     width: 100%;
-    background: #32322B;
-    color: #E1D9CA;
+    background: $smoke;
+    color: $stone;
+
+    @media screen and (min-width: 768px){
+        position: relative;
+    }
 
     &__wrapper{
         display: flex;
@@ -10,11 +16,13 @@
         padding: 5rem 1.5rem;
         max-width: 1400px;
         margin: auto;
+        
 
         @media screen and (min-width: 768px){
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding: 5rem 3rem;
+            position: relative;
         }
     }
 
@@ -23,6 +31,13 @@
         flex-direction: column;
         gap: 1.5rem;
 
+        @media screen and (min-width: 768px){
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+            grid-column: 2;
+        }
+
         &-wrapper{
             display: flex;
             flex-direction: column;
@@ -30,7 +45,7 @@
         }
 
         &-title{
-            color: #FDFCFA;
+            color: $white;
         }
 
         &-text{
@@ -58,19 +73,26 @@
             font-size: 0.9rem;
 
             &:nth-child(1){
-                color: #B8A68A;
+                color: $sand;
             }
         }
     }
 
-    &__image{
-        width: 100%;
-        object-fit: cover;
-        height: 550px;
+    &__gallery{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
         @media screen and (min-width: 768px){
-            height: 100%;
-            max-height: 600px;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        
+        &-image{
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            height: 400px;
         }
     }
 }

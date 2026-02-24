@@ -1,8 +1,10 @@
+@use "../../styles/variables" as *;
+
 .item-banner{
     display: flex;
     align-items: center;
     gap: 4rem;
-    color: #FDFCFA;
+    color: $white;
     
     &__line{
         height: 1px;

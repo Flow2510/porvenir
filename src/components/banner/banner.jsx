@@ -3,11 +3,11 @@ import './banner.scss';
 import ItemBanner from "../item-banner/item-banner";
 
 const items = [
-    "Exemple 1",
-    "Exemple 2",
-    "Exemple 3",
-    "Exemple 4",
-    "Exemple 5"
+    "Tropical Garden",
+    "Peaceful Atmosphere",
+    "Authentic Experience",
+    "Nature & Comfort",
+    "Relax & Recharge"
 ]
 
 export default function Banner() {

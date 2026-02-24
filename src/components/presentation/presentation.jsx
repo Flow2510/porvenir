@@ -2,10 +2,10 @@ import { motion } from 'motion/react';
 import './presentation.scss';
 
 const images = [
-    "/src/assets/images/cabane-crepuscule.jpg",
-    "/src/assets/images/jardin-piscine.jpg",
-    "/src/assets/images/patio.jpg",    
-    "/src/assets/images/habitation.jpg"
+    "/src/assets/images/patio.jpg",   
+    "/src/assets/images/habitation.jpg",
+     "/src/assets/images/cabane-crepuscule.jpg",
+    "/src/assets/images/jardin-piscine.jpg"
 ]
 
 export default function Presentation() {
@@ -19,7 +19,7 @@ export default function Presentation() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='presentation__content-title'
                 >
-                    Title
+                    Notre univers en images
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 25 }}
@@ -28,7 +28,7 @@ export default function Presentation() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='presentation__content-subtitle'
                 >
-                    Subtitle
+                    Plongez dans l’ambiance de votre prochaine escapade.
                 </motion.p>
             </div>
             <div className='presentation__gallery'>

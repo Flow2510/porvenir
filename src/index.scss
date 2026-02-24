@@ -1,3 +1,5 @@
+@use "./styles/variables" as *;
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -5,7 +7,7 @@
 
 html{
     font-family: "manrope" ,sans-serif;
-    color: #767460;
+    color: $dunes;
     font-weight: 300;
 
     @media screen and (min-width:768px) {
@@ -14,10 +16,12 @@ html{
 }
 
 body{
-    background: #FDFCFA;
+    background: $white;
 }
 
 h1, h2, h3 {
     font-family: "sigmar one", sans-serif;
     letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 100%;
 }

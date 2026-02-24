@@ -1,6 +1,8 @@
+@use "../../styles/variables" as *;
+
 .info{
-    background: #B8A68A;
-    color: #32322B;
+    background: $sand;
+    color: $smoke;
 
     &__content{
         display: grid;

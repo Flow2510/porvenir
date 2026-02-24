@@ -28,14 +28,11 @@ const stats = [
 
 export default function Stats() {
     return(
-        <motion.section 
+        <section 
             className='stats'
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y:0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true, amount: 1 }}
         >
-            {stats.map((stat, index) => (
+            <div className='stats__wrapper'>
+                {stats.map((stat, index) => (
                 <Stat
                     key={stat.subtitle + index}
                     subtitle={stat.subtitle}
@@ -44,6 +41,7 @@ export default function Stats() {
                     animation={stat.animation}
                 />
             ))}
-        </motion.section>
+            </div>
+        </section>
     )
 }

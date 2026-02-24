@@ -1,12 +1,20 @@
-.stats{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 2rem;
+@use "../../styles/variables" as *;
 
-    @media screen and (min-width:768px){
-        grid-template-columns: repeat(4,1fr);
-        max-width: 800px;
-        margin: auto;
+.stats{
+    width: 100%;
+    background: $stone;
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        
+
+        @media screen and (min-width:768px){
+            grid-template-columns: repeat(4,1fr);
+            max-width: 800px;
+            margin: auto;
+        }
     }
 }

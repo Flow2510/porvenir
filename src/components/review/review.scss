@@ -1,10 +1,12 @@
+@use "../../styles/variables" as *;
+
 .review{
-    background: #E1D9CA;
+    background: $smoke;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    color: #32322B;
+    color: $white;
     max-width: 400px;
     margin: auto;
 
@@ -30,7 +32,7 @@
         gap: 0.5rem;
 
         &-info{
-            color: #767460;
+            color: $dunes;
         }
     }
 
@@ -38,6 +40,6 @@
         font-size: 0.8rem;
         display: flex;
         gap: 0.1rem;
-        color: #767460;
+        color: $dunes;
     }
 }

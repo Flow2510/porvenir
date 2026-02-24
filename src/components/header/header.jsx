@@ -73,18 +73,29 @@ export default function Header() {
             </header>
             <div className={`mobile-menu${menuIsOpen ? ' mobile-menu--open' : ""}`}>
                 <nav className={`mobile-menu__nav`}>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/'}>Home</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/rooms'}>Rooms</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/about'}>About</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/reservation'}>Reservation</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/localisation'}>Localisation</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/contact'}>Contact</NavLink>
+                    <NavLink className={'mobile-menu__nav-link'} to={'/'}>{t("nav.home")}</NavLink>
+                    <NavLink className={'mobile-menu__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
+                    <NavLink className={'mobile-menu__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
+                    <NavLink className={'mobile-menu__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
+                    <NavLink className={'mobile-menu__nav-link'} to={'/localisation'}>{t("nav.localisation")}</NavLink>
+                    <NavLink className={'mobile-menu__nav-link'} to={'/contact'}>{t("nav.contact")}</NavLink>
                     <select className='mobile-menu__select' name="" id="" onChange={(e) => setLanguage(e.target.value)}>
                         {languages.map((lang, index) => (
                             <option key={lang.value + index} className='header__select-option' value={lang.value}>{lang.flag}</option>
                         ))}
                     </select>
                 </nav>
+                <div className='mobile-menu__social'>
+                    <a target='_blank' className='mobile-menu__social-link' href="https://www.whatsapp.com/">
+                        <i className="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    <a target='_blank' className='mobile-menu__social-link' href="https://www.facebook.com/">
+                        <i className="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a target='_blank' className='mobile-menu__social-link' href="https://www.instagram.com/">
+                        <i className="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
             </div>
         </>
     )

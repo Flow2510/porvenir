@@ -14,9 +14,9 @@ const infos = [
         animation: false
     },
     {
-        number: 100,
+        number: 98,
         unity: "%",
-        subtitle: "test",
+        subtitle: "Clients Satisfaits",
         animation: true
     }
 ]

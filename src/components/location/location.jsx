@@ -2,6 +2,13 @@ import { motion } from 'motion/react';
 import './location.scss';
 
 export default function Location() {
+    const images = [
+        "/src/assets/images/santamarta2.jpg",
+        "/src/assets/images/fleuve.jpg",
+        "/src/assets/images/santamarta.jpg",
+        "/src/assets/images/surf.jpg"
+    ]
+
     return(
         <section className='location'>
             <div className='location__wrapper'>
@@ -14,7 +21,7 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__content-title'
                         >
-                            Title
+                            Explorez les environs
                         </motion.h2>
                         <motion.p 
                             initial={{ opacity: 0, y: 25 }}
@@ -23,7 +30,7 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__content-text'
                         >
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem ducimus reiciendis adipisci sed beatae facere ea mollitia porro at? Doloribus totam sequi ab possimus autem odit iusto beatae nostrum tempora?
+                            Idéalement située à proximité des destinations les plus emblématiques de la côte caraïbe, notre auberge est le point de départ parfait pour découvrir la richesse culturelle et naturelle de la région. Entre plages paradisiaques, montagnes luxuriantes et villes dynamiques, chaque excursion promet une expérience unique.
                         </motion.p>
                         <motion.p 
                             className='location__content-text'
@@ -32,7 +39,7 @@ export default function Location() {
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, tenetur cumque culpa obcaecati, tempora a illum soluta optio nesciunt modi voluptas sequi qui amet perferendis delectus quo sint mollitia voluptate!
+                            Que vous soyez amateur de nature, de détente ou d’aventure, tout est à portée de main pour enrichir votre séjour.
                         </motion.p>
                     </div>
                     <motion.div 
@@ -50,8 +57,8 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__info-wrapper'
                         >
-                            <p className='location__info-text'>From Santa Marta</p>
-                            <p className='location__info-text'>5mn</p>
+                            <p className='location__info-text'>Santa Marta</p>
+                            <p className='location__info-text'>10mn</p>
                         </motion.div>
                         <motion.div 
                             initial={{ opacity: 0, y: 25 }}
@@ -60,8 +67,8 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__info-wrapper'
                         >
-                            <p className='location__info-text'>From Barranquilla</p>
-                            <p className='location__info-text'>30mn</p>
+                            <p className='location__info-text'>Minca</p>
+                            <p className='location__info-text'>20mn</p>
                         </motion.div>
                         <motion.div 
                             initial={{ opacity: 0, y: 25 }}
@@ -70,20 +77,25 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__info-wrapper'
                         >
-                            <p className='location__info-text'>From Cartagena de Indias</p>
+                            <p className='location__info-text'>Baranquilla</p>
                             <p className='location__info-text'>2h</p>
                         </motion.div>
                     </div>
                 </div>
-                <motion.img 
-                    initial={{ opacity: 0, y: 25 }}
-                    whileInView={{ opacity: 1, y:0 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true, amount: 0 }}
-                    className='location__image' 
-                    src="/src/assets/images/santamarta.jpg" 
-                    alt="" 
-                />
+                <div className='location__gallery'>
+                    {images.map((image, index) => (
+                        <motion.img 
+                            key={image + index}
+                            initial={{ opacity: 0, y: 25 }}
+                            whileInView={{ opacity: 1, y:0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true, amount: 0 }}
+                            className='location__gallery-image' 
+                            src={image}
+                            alt="" 
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     )

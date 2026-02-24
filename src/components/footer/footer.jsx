@@ -18,6 +18,17 @@ export default function Footer() {
                     <span>Santa Marta, Magdalena</span>
                     <span>Colombia</span>
                 </p>
+                <div className='footer__social'>
+                    <a target='_blank' className='footer__social-link' href="https://www.whatsapp.com/">
+                        <i className="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    <a target='_blank' className='footer__social-link' href="https://www.facebook.com/">
+                        <i className="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a target='_blank' className='footer__social-link' href="https://www.instagram.com/">
+                        <i className="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
             </motion.div>
             <motion.nav 
                 initial={{ opacity: 0, y: 25 }}

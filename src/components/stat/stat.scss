@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .stat{
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@
     &__number{
         font-size: 2rem;
         font-weight: 300;
-        color: #32322B;
+        color: $smoke;
         font-family: "sigmar one", sans-serif;
         display: flex;
         justify-content: center;

@@ -60,6 +60,10 @@
             width: fit-content;
             display: flex;
             gap: 0.5rem;
+
+            &:hover{
+                background: $sand;
+            }
         }
     }
 }

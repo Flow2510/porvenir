@@ -5,26 +5,30 @@ import './reviews.scss'
 const reviews = [
     {
         logo: "",
-        name: "test",
-        info: "test",
+        name: "Dupont J.",
+        info: "Subtitle",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eos repudiandae architecto voluptates ea iusto, officia maxime inventore quasi perferendis iste quibusdam vero laborum amet molestias quae dolor velit quidem? Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         stars: 5
     },
     {
         logo: "",
-        name: "test2",
-        info: "test",
+        name: "Name",
+        info: "Subtitle",
+        text: "Repellendus eos repudiandae architecto voluptates ea iusto, officia maxime inventore quasi perferendis iste quibusdam vero laborum amet molestias quae dolor velit quidem?",
         stars: 5
     },
     {
         logo: "",
-        name: "test3",
-        info: "test",
+        name: "Name",
+        info: "Subtitle",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eos repudiandae architecto voluptates ea iusto, officia maxime inventore quasi perferendis iste quibusdam vero laborum amet molestias quae dolor velit quidem?",
         stars: 5
     },
     {
         logo: "",
-        name: "test4",
-        info: "test",
+        name: "Name",
+        info: "Subtitle",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eos repudiandae architecto voluptates ea iusto, officia maxime inventore quasi perferendis iste quibusdam vero laborum amet molestias quae dolor velit quidem?",
         stars: 5
     }
 ]
@@ -55,12 +59,13 @@ export default function Reviews() {
             <div className='reviews__gallery'>
                 {reviews.map((review, index) => (
                     <Review 
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eos repudiandae architecto voluptates ea iusto, officia maxime inventore quasi perferendis iste quibusdam vero laborum amet molestias quae dolor velit quidem?"}
+                        text={review.text}
                         key={review.name + index}
-                        logo={review.logo}
+                        logo={'https://avatars.githubusercontent.com/u/157888733?s=400&u=c57ef6316a76f38d56047343de0cea7e05487e27&v=4'}
                         name={review.name}
                         info={review.info}
                         stars={review.stars}
+                        link={"#"}
                     />
                 ))}
             </div>

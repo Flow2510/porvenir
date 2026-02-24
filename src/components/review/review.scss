@@ -9,6 +9,12 @@
     color: $white;
     max-width: 400px;
     margin: auto;
+    height: 100%;
+
+    &:hover{
+        scale: 1.01;
+        cursor: pointer;
+    }
 
     &__line{
         width: 100%;
@@ -30,6 +36,12 @@
         justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
+
+        &-image{
+            width: 50px;
+            border-radius: 9999px;
+            object-fit: cover;
+        }
 
         &-info{
             color: $dunes;

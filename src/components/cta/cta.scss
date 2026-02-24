@@ -20,7 +20,7 @@
         }
     }
 
-    &__button{
+    &__link{
         padding: 1.2rem 3.5rem;
         font-size: 1rem;
         background: $smoke;
@@ -28,6 +28,12 @@
         border: none;
         display: flex;
         gap: 0.5rem;
+        text-decoration: none;
+
+        &:hover{
+            background: #32322bda;
+            cursor: pointer;
+        }
 
         span{
             transform: translateY(-2px);

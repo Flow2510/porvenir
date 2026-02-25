@@ -15,7 +15,12 @@ export default function Hero() {
                 transition={{ duration: 0.5}}
                 className='hero__content'
             >
-                <h1 className="hero__content-title"><span>{t("title.first")}</span><span>{t("title.second")}</span></h1>
+                <div 
+                    className={`hero__logo`}
+                >
+                    <h1 className='hero__logo-line1'>Auberge <span>del</span></h1>
+                    <h1 className='hero__logo-line2'>Porvenir</h1>
+                </div>
                 <NavLink className="hero__content-link">{t("link")}<span>→</span></NavLink>
             </motion.div>
         </section>

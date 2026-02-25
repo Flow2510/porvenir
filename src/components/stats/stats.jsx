@@ -1,6 +1,5 @@
 import './stats.scss';
 import Stat from '../stat/stat';
-import { motion } from 'motion/react';
 
 const stats = [
     {
@@ -14,9 +13,9 @@ const stats = [
         animation: false
     },
     {
-        number: 8,
-        subtitle: "Lits",
-        animation: true
+        number: 3,
+        subtitle: "Langues parlées",
+        animation: false
     },
     {
         number: 12,

@@ -1,5 +1,10 @@
 @use "../../styles/variables" as *;
 
+.review__wrapper{
+    text-decoration: none;
+    display: block;
+}
+
 .review{
     background: $smoke;
     padding: 2rem;
@@ -44,7 +49,7 @@
         }
 
         &-info{
-            color: $dunes;
+            color: $sand;
         }
     }
 
@@ -52,6 +57,6 @@
         font-size: 0.8rem;
         display: flex;
         gap: 0.1rem;
-        color: $dunes;
+        color: $stone;
     }
 }

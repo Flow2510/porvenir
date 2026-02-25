@@ -12,7 +12,12 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0.5 }}
                 className='footer__content'
             >
-                <h1 className='footer__content-logo'>Logo</h1>
+                <div 
+                    className={`footer__logo`}
+                >
+                    <h1 className='footer__logo-line1'>Auberge <span>del</span></h1>
+                    <h1 className='footer__logo-line2'>Porvenir</h1>
+                </div>
                 <p className='footer__content-subtitle'>
                     <span>Carretera vereda el Porvenir, Via a Minca</span>
                     <span>Santa Marta, Magdalena</span>

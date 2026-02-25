@@ -15,13 +15,48 @@
     transition: background-color 0.3s ease-in-out;
 
     &--scrolled{
-        background: $pure-white;
+        background: rgba(253, 252, 250, 0.97);
+        backdrop-filter: blur(20px);
         color: $smoke;
         transition: background-color 0.3s ease-in-out;
+        box-shadow: 0 2px 40px rgba(50, 50, 43, 0.08);
     }
 
     &__logo{
-        font-weight: 400;
+        visibility: hidden;
+        
+
+        span{
+            color: $sand;
+            position: relative;
+            font-size: 0.8rem;
+            transform: translateY(-3px);
+            
+            &::after{
+                display: block;
+                content: "";
+                width: 100%;
+                left: 0;
+                bottom: 2px;
+                position: absolute;
+                height: 1px;
+                background-color: $sand;
+            }
+        }
+
+        &--scrolled{
+            visibility: visible;
+        }
+
+        &-line1, &-line2{
+            position: relative;
+            font-family: "antonio", sans-serif;
+            display: flex;
+            font-size: 1.5rem;
+            gap: 0.2rem;
+            justify-content: center;
+            font-weight: 500;
+        }
 
         &--open{
             color: $smoke;

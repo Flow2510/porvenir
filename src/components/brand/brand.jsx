@@ -5,12 +5,16 @@ export default function Brand() {
     return(
         <section className='brand'>
             <div className='brand__content'>
-                <motion.h1 
+                <motion.div 
+                    className={`brand__logo`}
                     initial={{ opacity: 0, scale:0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0 }}
-                    className='brand__content-title'>LOGO</motion.h1>
+                >
+                    <h1 className='brand__logo-line1'>Auberge <span>del</span></h1>
+                    <h1 className='brand__logo-line2'>Porvenir</h1>
+                </motion.div>
             </div>
             <motion.img 
                 initial={{ opacity: 0, y: 25 }}

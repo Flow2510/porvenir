@@ -39,7 +39,13 @@ export default function Header() {
     return(
         <>
             <header className={`header${scrolled ? " header--scrolled" : ""}`}>
-                <h1 className={`header__logo${menuIsOpen? ' header__logo--open' : ''}`}>Logo</h1>
+                <div className={`header__logo
+                    ${menuIsOpen ? " header__logo--open" : ""}
+                    ${scrolled ? " header__logo--scrolled" : ""}`}
+                >
+                    <h1 className='header__logo-line1'>Auberge <span>del</span></h1>
+                    <h1 className='header__logo-line2'>Porvenir</h1>
+                </div>
                 <nav className='header__nav'>
                     <NavLink className={'header__nav-link'} to={'/'}>{t("nav.home")}</NavLink>
                     <NavLink className={'header__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>

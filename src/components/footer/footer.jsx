@@ -45,6 +45,7 @@ export default function Footer() {
                 <NavLink className={'footer__nav-link'} to={'/contact'}>Contact</NavLink>
             </motion.nav>
             <motion.iframe
+                title='Map'
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y:0 }}
                 transition={{ duration: 0.5 }}

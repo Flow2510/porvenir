@@ -9,6 +9,14 @@ import frHero from './locales/fr/frhero.json';
 import esHero from './locales/es/eshero.json';
 import gbHero from './locales/gb/gbhero.json';
 
+import frStats from './locales/fr/frstats.json';
+import esStats from './locales/es/esstats.json';
+import gbStats from './locales/gb/gbstats.json';
+
+import frIntro from './locales/fr/frintro.json';
+import esIntro from './locales/es/esintro.json';
+import gbIntro from './locales/gb/gbintro.json';
+
 i18n
   .use(initReactI18next)
   .init({
@@ -16,18 +24,24 @@ i18n
       fr: {
         header: frHeader,
         hero: frHero,
+        stats: frStats,
+        intro: frIntro
       },
       en: {
         header: gbHeader,
         hero: gbHero,
+        stats: gbStats,
+        intro: gbIntro
       },
       es: {
         header: esHeader,
         hero: esHero,
+        stats: esStats,
+        intro: esIntro
       }
     },
     lng: "fr",
-    fallbackLng: "en",
+    fallbackLng: "fr",
     ns: ["common"],          // namespace par défaut
     defaultNS: "common",
     interpolation: {

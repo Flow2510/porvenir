@@ -1,7 +1,10 @@
 import { motion } from 'motion/react';
 import './intro.scss';
+import { useTranslation } from 'react-i18next';
 
 export default function Intro() {
+    const { t } = useTranslation("intro")
+
     return(
         <section className='intro'>
             <div className='intro__content'>
@@ -12,7 +15,7 @@ export default function Intro() {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    Title
+                    {t("title")}
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 25 }}
@@ -21,7 +24,7 @@ export default function Intro() {
                     viewport={{ once: true, amount: 0.5 }}
                     className="intro__content-text"
                 >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi ea et distinctio, porro blanditiis reiciendis repellat nam, numquam dolor sed laboriosam id corrupti quas maiores eaque in quisquam molestias similique.
+                    {t("text_1")}
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, y: 25 }}
@@ -30,7 +33,7 @@ export default function Intro() {
                     viewport={{ once: true, amount: 0.5 }}
                     className="intro__content-text"
                 >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorum perspiciatis neque ducimus rem vitae unde distinctio quas, placeat dolorem temporibus expedita facere optio error? Nihil maxime vero molestiae assumenda.
+                    {t("text_2")}
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, y: 25 }}
@@ -39,7 +42,7 @@ export default function Intro() {
                     viewport={{ once: true, amount: 0.5 }}
                     className="intro__content-text"
                 >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe iure eius officiis non atque id, nostrum voluptates praesentium tenetur perferendis blanditiis amet excepturi earum porro architecto animi aliquam sunt.
+                    {t("text_3")}
                 </motion.p>
             </div>
             <div className='intro__video-wrapper'>

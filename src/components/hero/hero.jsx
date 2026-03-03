@@ -2,13 +2,14 @@ import { NavLink } from 'react-router-dom'
 import './hero.scss'
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
+import background from '../../assets/images/cabane-crepuscule.jpg'
 
 export default function Hero() {
     const { t } = useTranslation("hero");
 
     return(
         <section className='hero'>
-            <img className='hero__background' src="/src/assets/images/cabane-crepuscule.jpg" alt="" />
+            <img className='hero__background' src={background} alt="" />
             <motion.div 
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 70}}

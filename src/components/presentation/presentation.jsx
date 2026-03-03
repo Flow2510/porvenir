@@ -1,11 +1,16 @@
 import { motion } from 'motion/react';
 import './presentation.scss';
 
+import patio from "../../assets/images/patio.jpg"
+import habitation from "../../assets/images/habitation.jpg"
+import cabane from "../../assets/images/cabane-crepuscule.jpg"
+import jardin from "../../assets/images/jardin-piscine.jpg"
+
 const images = [
-    "/src/assets/images/patio.jpg",   
-    "/src/assets/images/habitation.jpg",
-     "/src/assets/images/cabane-crepuscule.jpg",
-    "/src/assets/images/jardin-piscine.jpg"
+    patio,   
+    habitation,
+    cabane,
+    jardin
 ]
 
 export default function Presentation() {

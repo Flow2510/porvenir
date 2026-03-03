@@ -1,12 +1,17 @@
 import { motion } from 'motion/react';
 import './location.scss';
 
+import santaMarta from '../../assets/images/santamarta2.jpg'
+import santaMarta2 from '../../assets/images/santamarta.jpg'
+import fleuve from '../../assets/images/fleuve.jpg'
+import surf from '../../assets/images/surf.jpg'
+
 export default function Location() {
     const images = [
-        "/src/assets/images/santamarta2.jpg",
-        "/src/assets/images/fleuve.jpg",
-        "/src/assets/images/santamarta.jpg",
-        "/src/assets/images/surf.jpg"
+        santaMarta,
+        fleuve,
+        santaMarta2,
+        surf
     ]
 
     return(

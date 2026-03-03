@@ -9,7 +9,7 @@ export default function Hero() {
 
     return(
         <section className='hero'>
-            <img className='hero__background' src="https://picsum.photos/1200/800" />
+            <img className='hero__background' src={background} alt='cabane au crepuscule dans la jungle'/>
             <motion.div 
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 70}}

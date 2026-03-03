@@ -1,6 +1,10 @@
 {
   "name": "porvenir-main",
   "private": true,
+  "resolutions": {
+    "rollup": "^4.59.0",
+    "minimatch": "^3.1.4"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {

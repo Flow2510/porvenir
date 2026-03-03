@@ -1,10 +1,13 @@
 import { motion } from 'motion/react';
 import './features.scss';
+import escalier from '../../assets/images/escalier-jungle.jpg'
+import terrasse from '../../assets/images/terrasse.jpg'
+import chambre from '../../assets/images/chambre-volet.jpg'
 
 const images = [
-    "/src/assets/images/escalier-jungle.jpg",
-    "/src/assets/images/terrasse.jpg",
-    "/src/assets/images/chambre-volet.jpg"
+    escalier,
+    terrasse,
+    chambre
 ]
 
 const equipments = [

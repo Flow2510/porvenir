@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import './brand.scss';
 
+import beach from '../../assets/video/jungle-beach.mp4';
+
 export default function Brand() {
     return(
         <section className='brand'>
@@ -16,14 +18,17 @@ export default function Brand() {
                     <h1 className='brand__logo-line2'>Porvenir</h1>
                 </motion.div>
             </div>
-            <motion.img 
+            <motion.video 
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y:0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true, amount: 0.5 }}
                 className='brand__image' 
-                src="/src/assets/images/cabane-crepuscule.jpg" 
+                src={beach}
                 alt="" 
+                autoPlay
+                muted
+                loop
             />
         </section>
     )

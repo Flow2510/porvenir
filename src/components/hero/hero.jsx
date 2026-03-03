@@ -9,7 +9,7 @@ export default function Hero() {
 
     return(
         <section className='hero'>
-            <img className='hero__background' src={background} alt="" />
+            <img className='hero__background' src="https://picsum.photos/1200/800" />
             <motion.div 
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 70}}
@@ -22,7 +22,7 @@ export default function Hero() {
                     <h1 className='hero__logo-line1'>Auberge <span>del</span></h1>
                     <h1 className='hero__logo-line2'>Porvenir</h1>
                 </div>
-                <NavLink className="hero__content-link">{t("link")}<span>→</span></NavLink>
+                <NavLink to={'/'} className="hero__content-link">{t("link")}<span>→</span></NavLink>
             </motion.div>
         </section>
     )

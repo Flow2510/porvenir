@@ -6,6 +6,8 @@ import habitation from "../../assets/images/habitation.jpg"
 import cabane from "../../assets/images/cabane-crepuscule.jpg"
 import jardin from "../../assets/images/jardin-piscine.jpg"
 
+import videoJungle from '../../assets/video/jungle.mp4'
+
 const images = [
     patio,   
     habitation,
@@ -37,7 +39,7 @@ export default function Presentation() {
                 </motion.p>
             </div>
             <div className='presentation__gallery'>
-                <video loop muted autoPlay className='presentation__gallery-video' src="/src/assets/video/jungle.mp4"></video>
+                <video loop muted autoPlay className='presentation__gallery-video' src={videoJungle}></video>
                 <div className='presentation__gallery-wrapper'>
                     {images.map((image, index) => (
                         <img className='presentation__gallery-image' src={image} key={index + image} alt="" />

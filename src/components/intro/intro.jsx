@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import './intro.scss';
 import { useTranslation } from 'react-i18next';
+import porvenirVideo from "../../assets/video/porvenir.mp4"
+
 
 export default function Intro() {
     const { t } = useTranslation("intro")
@@ -51,7 +53,7 @@ export default function Intro() {
                     whileInView={{ opacity: 1, y:0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0 }}
-                    className='intro__video' autoPlay loop muted src="/src/assets/video/porvenir.mp4"
+                    className='intro__video' autoPlay loop muted src={porvenirVideo}
                 >
 
                 </motion.video>

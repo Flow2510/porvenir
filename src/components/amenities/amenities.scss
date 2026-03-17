@@ -9,7 +9,8 @@
     margin: auto;
 
     @media screen and (min-width:768px){
-        padding: 2rem;
+        padding: 4rem 2rem;
+        gap: 2rem;
     }
 
     &__content{
@@ -40,10 +41,15 @@
 
     &__article{
         padding: 1rem;
-        border: 1px solid #32322b3f;
+        border: 1px solid $stone;
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover{
+            background-color: $stone;
+        }
 
         &-title{
             color:$smoke;

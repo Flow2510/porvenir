@@ -8,15 +8,15 @@ export default function Amenities() {
         },
         {
             title: "Title",
-            text: "Repellat iure veniam, voluptatum laborum omnis ea quod, tenetur sunt perferendis tempore exercitationem nostrum eligendi reiciendis asperiores recusandae odit possimus doloremque explicabo."
+            text: "Repellat iure veniam, voluptatum laborum omnis ea quod, tenetur sunt perferendis tempore exercitationem."
         },
         {
             title: "Title",
-            text: "Tenetur sunt perferendis tempore exercitationem nostrum eligendi reiciendis asperiores recusandae odit possimus doloremque explicabo."
+            text: "Tenetur sunt perferendis tempore exercitationem nostrum eligendi reiciendis asperiores recusandae odit possimus."
         },
         {
             title: "Title",
-            text: "Repellat iure veniam, voluptatum laborum omnis ea quod, tenetur sunt perferendis tempore exercitationem nostrum eligendi reiciendis asperiores recusandae odit possimus doloremque explicabo."
+            text: "Repellat iure veniam, voluptatum laborum omnis ea quod, tenetur sunt perferendis tempore exercitationem."
         },
     ]
     return(

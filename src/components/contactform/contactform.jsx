@@ -1,4 +1,4 @@
-import './contact-form.scss'
+import './contactform.scss'
 
 export default function ContactForm(){
     return(

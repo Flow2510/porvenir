@@ -67,8 +67,16 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0.5 }}
                 className='footer__info'
             >
-                <p className='footer__info-text'>© Auberge del Porvenir</p>
-                <p className='footer__info-text'>Santa Marta, Colombia</p>
+                <p className='footer__info-text'>© {new Date().getFullYear()} Auberge del Porvenir — Santa Marta, Colombie</p>
+                <a
+                    className='footer__info-link'
+                    href="https://flowportfolio.netlify.app/"
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    aria-label="Site conçu par Sendra Florian"
+                >
+                    Crédit 
+                </a>
             </motion.div>
         </footer>
     )

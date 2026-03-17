@@ -23,6 +23,10 @@ export default function Header() {
         }
     ]
 
+    const closeMenu = () => {
+        setMenuIsOpen(prev => !prev)
+    }
+
     const setLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
@@ -39,13 +43,15 @@ export default function Header() {
     return(
         <>
             <header className={`header${scrolled ? " header--scrolled" : ""}`}>
-                <div className={`header__logo
-                    ${menuIsOpen ? " header__logo--open" : ""}
-                    ${scrolled ? " header__logo--scrolled" : ""}`}
-                >
-                    <h1 className='header__logo-line1'>Auberge <span>del</span></h1>
-                    <h1 className='header__logo-line2'>Porvenir</h1>
-                </div>
+                <NavLink to={'/'} className={'header__logo-wrapper'}>
+                    <div className={`header__logo
+                        ${menuIsOpen ? " header__logo--open" : ""}
+                        ${scrolled ? " header__logo--scrolled" : ""}`}
+                    >
+                        <h1 className='header__logo-line1'>Auberge <span>del</span></h1>
+                        <h1 className='header__logo-line2'>Porvenir</h1>
+                    </div>
+                </NavLink>
                 <nav className='header__nav'>
                     <NavLink className={'header__nav-link'} to={'/'}>{t("nav.home")}</NavLink>
                     <NavLink className={'header__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
@@ -79,12 +85,12 @@ export default function Header() {
             </header>
             <div className={`mobile-menu${menuIsOpen ? ' mobile-menu--open' : ""}`}>
                 <nav className={`mobile-menu__nav`}>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/'}>{t("nav.home")}</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/localisation'}>{t("nav.localisation")}</NavLink>
-                    <NavLink className={'mobile-menu__nav-link'} to={'/contact'}>{t("nav.contact")}</NavLink>
+                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/'}>{t("nav.home")}</NavLink>
+                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
+                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
+                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
+                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/localisation'}>{t("nav.localisation")}</NavLink>
+                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/contact'}>{t("nav.contact")}</NavLink>
                     <select className='mobile-menu__select' name="" id="" onChange={(e) => setLanguage(e.target.value)}>
                         {languages.map((lang, index) => (
                             <option key={lang.value + index} className='header__select-option' value={lang.value}>{lang.flag}</option>

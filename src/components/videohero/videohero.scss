@@ -1,0 +1,84 @@
+@use "../../styles/variables" as *;
+
+.video-hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: $white;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 10rem;
+    }
+
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        content: "";
+        background: linear-gradient(to bottom, transparent 30%, $smoke);
+    }
+
+    &__content{
+        position: relative;
+        padding: 1.5rem 1.5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 100%;
+        gap: 0.5rem;
+
+        @media screen and (min-width: 768px) {
+            padding: 2rem;
+            
+        }
+
+        &-title{
+            display: flex;
+            font-family: "antonio", sans-serif;
+            flex-direction: column;
+            font-size: 3.5rem;
+            line-height: 100%;
+            font-weight: 400;
+
+            &--uppercase{
+                font-size: 3.2rem;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 4.5rem;
+            }
+        }
+
+        &-subtitle{
+            font-size: 1rem;
+            font-family: "antonio", sans-serif;
+            font-weight: 100;
+            letter-spacing: 1px;
+            color: $stone;
+        }
+
+        &-stats{
+            display: flex;
+            
+            article{
+                color: white !important;
+            }
+        }
+    }
+
+    
+}

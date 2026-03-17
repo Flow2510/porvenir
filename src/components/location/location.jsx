@@ -1,17 +1,29 @@
 import { motion } from 'motion/react';
 import './location.scss';
 
-import santaMarta from '../../assets/images/santamarta2.jpg'
-import santaMarta2 from '../../assets/images/santamarta.jpg'
-import fleuve from '../../assets/images/fleuve.jpg'
-import surf from '../../assets/images/surf.jpg'
+import minca from '../../assets/images/minca.jpg'
+import santaMarta3 from '../../assets/images/santamarta3.jpg'
+import river from '../../assets/images/fleuve.jpg'
+import beach from '../../assets/images/plage.jpg'
 
 export default function Location() {
     const images = [
-        santaMarta,
-        fleuve,
-        santaMarta2,
-        surf
+        {
+            image: santaMarta3,
+            alt:"Centre historique de Santa Marta au crépuscule avec la mer des Caraïbes et les montagnes en arrière-plan"
+        },
+        {
+            image: beach,
+            alt:"Plage dans le parc national naturel de Tairona"
+        },
+        {
+            image: river,
+            alt:"Le fleuve Magdalena entouré de jungle tropicale près de Baranquilla en Colombie"
+        },
+        {
+            image: minca,
+            alt:"Plante tropicale devant une cascade dans la jungle de Minca"
+        }
     ]
 
     return(
@@ -82,22 +94,32 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__info-wrapper'
                         >
-                            <p className='location__info-text'>Baranquilla</p>
-                            <p className='location__info-text'>2h</p>
+                            <p className='location__info-text'>Taganga</p>
+                            <p className='location__info-text'>35mn</p>
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 25 }}
+                            whileInView={{ opacity: 1, y:0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            className='location__info-wrapper'
+                        >
+                            <p className='location__info-text'>Parc national naturel de Tairona</p>
+                            <p className='location__info-text'>45mn</p>
                         </motion.div>
                     </div>
                 </div>
                 <div className='location__gallery'>
-                    {images.map((image, index) => (
+                    {images.map((i, index) => (
                         <motion.img 
-                            key={image + index}
+                            key={i.image + index}
                             initial={{ opacity: 0, y: 25 }}
                             whileInView={{ opacity: 1, y:0 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true, amount: 0 }}
                             className='location__gallery-image' 
-                            src={image}
-                            alt="" 
+                            src={i.image}
+                            alt={i.alt} 
                         />
                     ))}
                 </div>

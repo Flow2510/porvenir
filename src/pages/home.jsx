@@ -23,7 +23,12 @@ export default function Home(){
             <Features />
             <Brand />
             <Location />
-            <Cta />
+            <Cta 
+                title={"Prêt à vivre l’expérience Porvenir ?"}
+                text={"Entre jungle luxuriante et rivière paisible, l’Auberge del Porvenir vous accueille pour une parenthèse hors du temps. Que vous voyagiez en couple, entre amis ou en solo, venez découvrir un lieu authentique entre Santa Marta et Minca."}
+                link={"Consulter nos hébergements"}
+                to={""}
+            />
         </main>
     )
 }

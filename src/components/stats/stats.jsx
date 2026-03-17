@@ -11,12 +11,13 @@ export default function Stats() {
             animation: true
         },
         {
-            number: 1,
+            number: 3,
             subtitle: `${t("subtitle_2")}`,
             animation: false
         },
         {
-            number: 3,
+            number: 10,
+            unity: " KM",
             subtitle: `${t("subtitle_3")}`,
             animation: false
         },

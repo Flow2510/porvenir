@@ -1,32 +1,35 @@
+import { useTranslation } from 'react-i18next';
 import Stat from '../stat/stat';
 import './info.scss';
 
-const infos = [
-    {
-        number: 10,
-        subtitle: "5-stars reviews",
-        unity: "+",
-        animation: true
-    },
-    {
-        number: 3,
-        subtitle: "Langues parlées",
-        animation: false
-    },
-    {
-        number: 98,
-        unity: "%",
-        subtitle: "Clients Satisfaits",
-        animation: true
-    }
-]
-
 export default function Info(){
+    const { t } = useTranslation("info");
+
+    const infos = [
+        {
+            number: 5,
+            subtitle: `${t("subtitle_1")}`,
+            unity: "+",
+            animation: true
+        },
+        {
+            number: 3,
+            subtitle: `${t("subtitle_2")}`,
+            animation: true
+        },
+        {
+            number: 100,
+            unity: "%",
+            subtitle: `${t("subtitle_3")}`,
+            animation: true
+        }
+    ]
+
     return(
         <section className='info'>
             <div className='info__content'>
                 {infos.map((info, index) => (
-                    <Stat 
+                    <Stat
                         key={info.subtitle + index}
                         subtitle={info.subtitle}
                         number={info.number}

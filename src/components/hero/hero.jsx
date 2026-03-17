@@ -2,14 +2,14 @@ import { NavLink } from 'react-router-dom'
 import './hero.scss'
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
-import background from '../../assets/images/cabane-crepuscule.jpg'
+import background from '../../assets/images/maison-ciel.jpg'
 
 export default function Hero() {
     const { t } = useTranslation("hero");
 
     return(
         <section className='hero'>
-            <img className='hero__background' src={background} alt='cabane au crepuscule dans la jungle'/>
+            <img className='hero__background' src={background} alt='cabane au crépuscule dans la jungle entre Santa Marta et Minca'/>
             <motion.div 
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 70}}

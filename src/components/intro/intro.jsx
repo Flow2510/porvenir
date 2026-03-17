@@ -53,9 +53,14 @@ export default function Intro() {
                     whileInView={{ opacity: 1, y:0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0 }}
-                    className='intro__video' autoPlay loop muted src={porvenirVideo}
+                    className='intro__video' 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    preload="metadata"
                 >
-
+                    <source src={porvenirVideo} type="video/mp4" />
                 </motion.video>
             </div>
         </section>

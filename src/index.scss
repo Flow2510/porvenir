@@ -17,11 +17,12 @@ html{
 
 body{
     background: $white;
+    overflow-x: hidden;
 }
 
 h2, h3 {
-    font-family: "Carter one", sans-serif;
+    font-family: "antonio", sans-serif;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 100%;
 }

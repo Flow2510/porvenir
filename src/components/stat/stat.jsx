@@ -16,9 +16,7 @@ export default function Stat({ number, subtitle, unity, animation }){
                 {animation? 
                     <CountUp 
                         end={number} 
-                        duration={3} 
-                        enableScrollSpy
-                        scrollSpyOnce
+                        duration={3}
                     />
                     :
                     <span>{number}</span>

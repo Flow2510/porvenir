@@ -15,23 +15,30 @@
         flex-direction: column;
         gap: 1.5rem;
 
+        &-title{
+            font-size: 2.5rem;
+            color: $smoke;
+        }
+
         &-text{
             line-height: 200%;
         }
     }
 
     &__link{
-        padding: 1.2rem 3.5rem;
+        padding: 1rem 1.8rem;
         font-size: 1rem;
-        background: $smoke;
-        color: $white;
-        border: none;
+        background: $white;
+        color: $smoke;
+        border: 1px solid;
         display: flex;
         gap: 0.5rem;
         text-decoration: none;
 
         &:hover{
-            background: #32322bda;
+            background: $smoke;
+            color: $white;
+            border-color: $smoke;
             cursor: pointer;
         }
 

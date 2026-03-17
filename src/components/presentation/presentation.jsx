@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import './presentation.scss';
+import { useTranslation } from 'react-i18next';
 
 import patio from "../../assets/images/patio.jpg"
 import habitation from "../../assets/images/habitation.jpg"
@@ -8,14 +9,28 @@ import jardin from "../../assets/images/jardin-piscine.jpg"
 
 import videoJungle from '../../assets/video/jungle.mp4'
 
-const images = [
-    patio,   
-    habitation,
-    cabane,
-    jardin
+export default function Presentation() {
+    const { t } = useTranslation("presentation")
+
+    const images = [
+    {
+        image: patio,
+        alt: `${t("alt_1")}`
+    },
+    {
+        image: habitation,
+        alt: `${t("alt_2")}`
+    },
+    {
+        image: cabane,
+        alt: `${t("alt_3")}`
+    },
+    {
+        image: jardin,
+        alt: `${t("alt_4")}`
+    }
 ]
 
-export default function Presentation() {
     return(
         <section className='presentation'>
             <div className='presentation__content'>
@@ -26,7 +41,7 @@ export default function Presentation() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='presentation__content-title'
                 >
-                    Notre univers en images
+                    {t("title")}
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 25 }}
@@ -35,14 +50,14 @@ export default function Presentation() {
                     viewport={{ once: true, amount: 0.5 }}
                     className='presentation__content-subtitle'
                 >
-                    Plongez dans l’ambiance de votre prochaine escapade.
+                    {t("subtitle")}
                 </motion.p>
             </div>
             <div className='presentation__gallery'>
                 <video loop muted autoPlay className='presentation__gallery-video' src={videoJungle}></video>
                 <div className='presentation__gallery-wrapper'>
-                    {images.map((image, index) => (
-                        <img className='presentation__gallery-image' src={image} key={index + image} alt="" />
+                    {images.map((i, index) => (
+                        <img className='presentation__gallery-image' src={i.image} key={index + i.image} alt={i.alt} />
                     ))}
                 </div>
             </div>

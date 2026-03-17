@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+
+.contact-hero{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $stone;
+    padding: 1rem;
+
+    &__content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 600px;
+
+        &-title{
+            color: $smoke;
+            font-size: 2.5rem;
+            font-family: "antonio", sans-serif;
+        }
+
+        &-text{
+            color: $dunes;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 170%;
+        }
+    }
+}

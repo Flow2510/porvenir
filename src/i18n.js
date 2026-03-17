@@ -17,6 +17,15 @@ import frIntro from './locales/fr/frintro.json';
 import esIntro from './locales/es/esintro.json';
 import gbIntro from './locales/gb/gbintro.json';
 
+import frPresentation from './locales/fr/frpresentation.json';
+import esPresentation from './locales/es/espresentation.json';
+import gbPresentation from './locales/gb/gbpresentation.json';
+
+import frInfo from './locales/fr/frinfo.json';
+import esInfo from './locales/es/esinfo.json';
+import gbInfo from './locales/gb/gbinfo.json';
+
+
 i18n
   .use(initReactI18next)
   .init({
@@ -25,19 +34,25 @@ i18n
         header: frHeader,
         hero: frHero,
         stats: frStats,
-        intro: frIntro
+        intro: frIntro,
+        presentation: frPresentation,
+        info: frInfo
       },
-      en: {
+      gb: {
         header: gbHeader,
         hero: gbHero,
         stats: gbStats,
-        intro: gbIntro
+        intro: gbIntro,
+        presentation: gbPresentation,
+        info: gbInfo
       },
       es: {
         header: esHeader,
         hero: esHero,
         stats: esStats,
-        intro: esIntro
+        intro: esIntro,
+        presentation: esPresentation,
+        info: esInfo
       }
     },
     lng: "fr",

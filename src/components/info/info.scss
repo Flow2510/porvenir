@@ -3,12 +3,15 @@
 .info{
     background: $stone;
     color: $smoke;
+    position: relative;
 
     &__content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         padding: 2rem;
+        max-width: 900px;
+        margin: auto;
 
         @media screen and (min-width:768px){
             display: flex;

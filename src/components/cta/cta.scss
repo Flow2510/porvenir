@@ -7,10 +7,12 @@
     align-items: center;
     text-align: center;
     gap: 3rem;
-    max-width: 600px;
-    margin: auto;
+    position: relative;
+    background: $white;
 
     &__content{
+        max-width: 600px;
+        margin: auto;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;

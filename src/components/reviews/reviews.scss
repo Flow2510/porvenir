@@ -5,14 +5,16 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    max-width: 1350px;
-    margin: auto;
+    position: relative;
+    background: $white;
 
     &__content{
         text-align: center;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        max-width: 1350px;
+        margin: auto;
 
         &-title{
             color: $smoke;
@@ -23,6 +25,8 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        max-width: 1350px;
+        margin: auto;
 
         @media screen and (min-width: 768px) {
             display: grid;

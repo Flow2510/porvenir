@@ -7,14 +7,15 @@
     flex-direction: column;
     gap: 1.5rem;
     line-height: 200%;
-    max-width: 1400px;
-    margin: auto;
+    position: relative;
+    background: $white;
 
     @media screen and (min-width:768px){
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 600px);
         text-align: left;
         padding: 5rem 3rem;
+        justify-content: center;
     }
 
     &__content{
@@ -24,6 +25,7 @@
 
         &-title{
             color: $smoke;
+            font-size: 2.5rem;
         }
         
         @media screen and (min-width:768px){

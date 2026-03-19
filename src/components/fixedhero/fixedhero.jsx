@@ -1,12 +1,11 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import './fixedhero.scss';
-import { useRef } from 'react';
 
 export default function FixedHero({ video, image, subtitle, title, text }){
-    const scrollRef = useRef(null)
     const { scrollY } = useScroll();
 
-    const y = useTransform(scrollY, [0, 500], [0, -250]);
+    const y = useTransform(scrollY, [0, 700], [0, -400]);
+
 
     return(
         <motion.section className='fixed-hero' style={{ y }}>
@@ -14,7 +13,6 @@ export default function FixedHero({ video, image, subtitle, title, text }){
                 <video 
                     className='fixed-hero__background' 
                     autoPlay loop muted src={video}
-                    
                 >
 
                 </video>
@@ -24,9 +22,9 @@ export default function FixedHero({ video, image, subtitle, title, text }){
                     className='fixed-hero__background' 
                     src={image} 
                     alt="" 
-                    style={{ y }}
                 />
             }
+            <div className='fixed-hero__overlay'></div>
             <div className='fixed-hero__content'>
                 {subtitle &&
                     <p className='fixed-hero__content-subtitle'>{subtitle}</p>                    

@@ -1,14 +1,22 @@
+import Brand from "../components/brand/brand";
 import ContactForm from "../components/contactform/contactform";
-import TextHero from "../components/texthero/texthero";
+import HalfHero from "../components/halfhero/halfhero";
+
+import heroBackground from '../assets/images/patio.jpg'
+import videoBackground from "../assets/video/jungle-beach.mp4"
 
 export default function Contact(){
     return(
         <main>
-            <TextHero 
+            <HalfHero
+                image={heroBackground}
                 title={"Contact"}
-                text={'Perspiciatis distinctio quasi assumenda id ad quisquam officiis dolores fugiat consectetur aperiam iure enim? Optio?'}
+                text={'Perspiciatis distinctio quasi assumenda?'}
             />
             <ContactForm />
+            <Brand 
+                videoBackground={videoBackground}
+            />
         </main>
     )
 }

@@ -10,6 +10,7 @@ export default function Hero() {
     return(
         <section className='hero'>
             <img className='hero__background' src={background} alt='cabane au crépuscule dans la jungle entre Santa Marta et Minca'/>
+            <div className='hero__overlay'></div>
             <motion.div 
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 70}}

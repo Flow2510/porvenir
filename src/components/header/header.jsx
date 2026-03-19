@@ -107,6 +107,9 @@ export default function Header() {
                     <a target='_blank' className='mobile-menu__social-link' href="https://www.instagram.com/">
                         <i className="fa-brands fa-square-instagram"></i>
                     </a>
+                    <a target='_blank' className='mobile-menu__social-link' href="https://www.booking.com/">
+                        <i className="fa-brands fa-blogger"></i>
+                    </a>
                 </div>
             </div>
         </>

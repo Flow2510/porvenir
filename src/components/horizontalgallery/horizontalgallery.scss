@@ -9,8 +9,8 @@
     gap: 2rem;
     text-align: center;
     
-    @media screen and (min-width: 768px) {
-
+    @media screen and (min-width: 1200px) {
+        padding: 0 2rem;
     }
 
     &__mobile{
@@ -66,20 +66,17 @@
     }
 
     &__large{
+        overflow-y: hidden;
 
         &-scroll{
-
-
-            @media screen and (min-width: 768px){
-
-            }
+            height: 300vh;
+            position: relative;
         }
 
         &-sticky{
-
-            @media screen and (min-width: 768px){
-
-            }     
+            position: sticky;
+            height: 800px;
+            top: 2rem;  
         }
 
         &-gallery{
@@ -87,16 +84,27 @@
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+
+            @media screen and (min-width: 768px){
+                height: 600px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: initial;
+                align-items: initial;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
 
         &-article{
-            position: sticky;
-            top: 8rem;
-            width: 100%;
-            max-width: 900px;
-            height: 600px;
             display: flex;
             align-items: end;
+            top: 8rem;
+            flex-shrink: 0;
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
         }
 
         &-content{
@@ -121,10 +129,6 @@
             position: absolute;
             top: 0;
             left: 0;
-
-            @media screen and (min-width: 768px){
-
-            }
         }
 
         &-overlay{

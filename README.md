@@ -25,11 +25,13 @@ Routing configuré
 
 Animations
 
-Choix et intégration de la police définitive
+Remplacement des photos temporaires
+
+Choix et intégration de la police et couleurs définitive
 
 Ajustement des tailles typographiques
 
-Traductions en :
+Traductions complete en :
 
 🇫🇷 Français
 
@@ -39,13 +41,11 @@ Traductions en :
 
 Ajout de nouvelles pages (à définir)
 
-Remplacement des photos temporaires
+connexion du formulaire
 
 
 
 🎨 À propos du design
-
-⚠️ Le design actuel est volontairement "grossier".
 
 Certaines décisions visuelles évolueront :
 

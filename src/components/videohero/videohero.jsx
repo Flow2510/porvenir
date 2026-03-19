@@ -4,7 +4,7 @@ export default function VideoHero({subtitle, text, title, videoBackground, color
     return(
         <section className='video-hero'>
             <video autoPlay muted loop src={videoBackground} className='video-hero__background'></video>
-            <div className='video-hero__overlay' style={{ background: `linear-gradient(to bottom, transparent 30%, ${color})`}}></div>
+            <div className='video-hero__overlay'></div>
             <div className='video-hero__content'>
                 <div>
                     {subtitle && 

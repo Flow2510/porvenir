@@ -28,9 +28,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        display: block;
-        content: "";
-        opacity: 0.8;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent, rgba(0, 0, 0, 0.4));
     }
 
     &__content{

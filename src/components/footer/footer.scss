@@ -3,7 +3,7 @@
 .footer{
     background: $smoke;
     color: $stone;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -11,6 +11,7 @@
     @media screen and (min-width: 768px){
         display: grid;
         grid-template-columns: 30% auto 30%;
+        padding: 4rem 2rem;
     }
 
     &__logo{    

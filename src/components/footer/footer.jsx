@@ -33,6 +33,9 @@ export default function Footer() {
                     <a target='_blank' className='footer__social-link' href="https://www.instagram.com/">
                         <i className="fa-brands fa-square-instagram"></i>
                     </a>
+                    <a target='_blank' className='footer__social-link' href="https://www.instagram.com/">
+                        <i className="fa-brands fa-blogger"></i>
+                    </a>
                 </div>
             </motion.div>
             <motion.nav 

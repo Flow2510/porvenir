@@ -1,9 +1,7 @@
 import { motion } from 'motion/react';
 import './brand.scss';
 
-import beach from '../../assets/video/jungle-beach.mp4';
-
-export default function Brand() {
+export default function Brand({ videoBackground }) {
     return(
         <section className='brand'>
             <div className='brand__content'>
@@ -19,12 +17,12 @@ export default function Brand() {
                 </motion.div>
             </div>
             <motion.video 
-                initial={{ opacity: 0, y: 25 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y:0 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
                 className='brand__image' 
-                src={beach}
+                src={videoBackground}
                 alt="" 
                 autoPlay
                 muted

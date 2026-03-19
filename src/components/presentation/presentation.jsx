@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 import patio from "../../assets/images/patio.jpg"
 import habitation from "../../assets/images/habitation.jpg"
 import cabane from "../../assets/images/cabane-crepuscule.jpg"
-import jardin from "../../assets/images/jardin-piscine.jpg"
+import terasse from "../../assets/images/cabane.jpg"
 
-import videoJungle from '../../assets/video/jungle.mp4'
+import videoGallery from '../../assets/video/terasse.mp4'
 
 export default function Presentation() {
     const { t } = useTranslation("presentation")
@@ -26,7 +26,7 @@ export default function Presentation() {
         alt: `${t("alt_3")}`
     },
     {
-        image: jardin,
+        image: terasse,
         alt: `${t("alt_4")}`
     }
 ]
@@ -54,7 +54,7 @@ export default function Presentation() {
                 </motion.p>
             </div>
             <div className='presentation__gallery'>
-                <video loop muted autoPlay className='presentation__gallery-video' src={videoJungle}></video>
+                <video loop muted autoPlay className='presentation__gallery-video' src={videoGallery}></video>
                 <div className='presentation__gallery-wrapper'>
                     {images.map((i, index) => (
                         <img className='presentation__gallery-image' src={i.image} key={index + i.image} alt={i.alt} />

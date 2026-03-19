@@ -10,6 +10,8 @@ import Brand from "../components/brand/brand";
 import Location from "../components/location/location";
 import Cta from "../components/cta/cta";
 
+import videoBackground from '../assets/video/jungle-beach.mp4'
+
 export default function Home(){
     return(
         <main>
@@ -21,7 +23,9 @@ export default function Home(){
             <Reviews />
             <Banner />
             <Features />
-            <Brand />
+            <Brand 
+                videoBackground={videoBackground}
+            />
             <Location />
             <Cta 
                 title={"Prêt à vivre l’expérience Porvenir ?"}

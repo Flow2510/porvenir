@@ -36,9 +36,10 @@
         display: flex;
         gap: 0.5rem;
         text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
 
         &:hover{
-            background: $smoke;
+            background-color: $smoke;
             color: $white;
             border-color: $smoke;
             cursor: pointer;

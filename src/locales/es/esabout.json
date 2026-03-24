@@ -1,0 +1,36 @@
+{
+    "hero": {
+        "image": "/src/assets/images/santamarta3.jpg",
+        "title": "Descubra Santa Marta",
+        "text": "Perspiciatis distinctio quasi assumenda id ad quisquam officiis dolores fugiat consectetur aperiam iure enim? Optio?"
+    },
+
+    "grid": [
+        {
+        "title": "Santa Marta",
+        "subtitle": "Sous-titre",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit modi delectus explicabo voluptatem accusantium deserunt, distinctio quae amet vero ut. Maxime ad quae vero. Molestiae aliquid dolor voluptates inventore?"
+        },
+        {
+        "title": "Minca",
+        "subtitle": "Sous-titre",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit modi delectus explicabo voluptatem accusantium deserunt, distinctio quae amet vero ut. Maxime ad quae vero. Molestiae aliquid dolor voluptates inventore?"
+        },
+        {
+        "title": "Tayrona",
+        "subtitle": "Sous-titre",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit modi delectus explicabo voluptatem accusantium deserunt, distinctio quae amet vero ut. Maxime ad quae vero. Molestiae aliquid dolor voluptates inventore?"
+        },
+        {
+        "title": "Magdalena",
+        "subtitle": "Sous-titre",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit modi delectus explicabo voluptatem accusantium deserunt, distinctio quae amet vero ut. Maxime ad quae vero. Molestiae aliquid dolor voluptates inventore?"
+        }
+    ],
+
+    "cta": {
+        "title": "¿Listo para vivir la experiencia Porvenir?",
+        "text": "Entre una selva exuberante y un río tranquilo, la Auberge del Porvenir te da la bienvenida a un momento fuera del tiempo. Ya sea que viajes en pareja, con amigos o solo, ven a descubrir un lugar auténtico entre Santa Marta y Minca.",
+        "button": "Ver nuestros alojamientos"
+    }
+}

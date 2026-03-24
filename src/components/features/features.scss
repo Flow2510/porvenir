@@ -2,19 +2,22 @@
 
 .features{
     padding: 3rem 1.5rem 0rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    position: relative;
     background: $white;
+    position: relative;
 
-    @media screen and (min-width: 768px){
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 600px);
-        align-items: start;
-        padding: 3rem;
-        gap: 2rem;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @media screen and (min-width: 768px){
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: start;
+            padding: 3rem;
+            gap: 2rem;
+        }
     }
 
     &__content{

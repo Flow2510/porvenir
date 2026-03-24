@@ -57,7 +57,6 @@ export default function Header() {
                     <NavLink className={'header__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
                     <NavLink className={'header__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
                     <NavLink className={'header__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
-                    <NavLink className={'header__nav-link'} to={'/localisation'}>{t("nav.localisation")}</NavLink>
                     <NavLink className={'header__nav-link header__nav-link--contact'} to={'/contact'}>{t("nav.contact")}</NavLink>
                     <select
                         className='header__select'
@@ -89,7 +88,6 @@ export default function Header() {
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/rooms'}>{t("nav.rooms")}</NavLink>
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
-                    <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/localisation'}>{t("nav.localisation")}</NavLink>
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/contact'}>{t("nav.contact")}</NavLink>
                     <select className='mobile-menu__select' name="" id="" onChange={(e) => setLanguage(e.target.value)}>
                         {languages.map((lang, index) => (

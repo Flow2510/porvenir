@@ -26,51 +26,53 @@ const equipments = [
 export default function Features() {
     return(
         <section className='features'>
-            <div className='features__content'>
-                <motion.h2 
+            <div className='features__wrapper'>
+                <div className='features__content'>
+                    <motion.h2 
+                        initial={{ opacity: 0, y: 25 }}
+                        whileInView={{ opacity: 1, y:0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        className='features__content-title'
+                    >
+                        Détente et Liberté
+                    </motion.h2>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 25 }}
+                        whileInView={{ opacity: 1, y:0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        className='features__content-subtitle'
+                    >
+                        Tout est réuni pour vivre un séjour simple, confortable et apaisant.
+                    </motion.p>
+                    <ul className='features__content-list'>
+                        {equipments.map((equipment, index) => (
+                            <motion.li 
+                                className='features__content-item' 
+                                initial={{ opacity: 0, y: 25 }}
+                                whileInView={{ opacity: 1, y:0 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true, amount: 0.5 }}
+                                key={equipment + index}
+                            >
+                                <span>→</span> {equipment}
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+                <motion.div 
                     initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y:0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: true, amount: 0.5 }}
-                    className='features__content-title'
+                    viewport={{ once: true, amount: 0.1 }}
+                    className='features__gallery'
                 >
-                    Détente et Liberté
-                </motion.h2>
-                <motion.p 
-                    initial={{ opacity: 0, y: 25 }}
-                    whileInView={{ opacity: 1, y:0 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true, amount: 0.5 }}
-                    className='features__content-subtitle'
-                >
-                    Tout est réuni pour vivre un séjour simple, confortable et apaisant.
-                </motion.p>
-                <ul className='features__content-list'>
-                    {equipments.map((equipment, index) => (
-                        <motion.li 
-                            className='features__content-item' 
-                            initial={{ opacity: 0, y: 25 }}
-                            whileInView={{ opacity: 1, y:0 }}
-                            transition={{ duration: 0.5 }}
-                            viewport={{ once: true, amount: 0.5 }}
-                            key={equipment + index}
-                        >
-                            <span>→</span> {equipment}
-                        </motion.li>
+                    {images.map((image, index) => (
+                        <img className='features__gallery-image' src={image} key={image + index} alt="" />
                     ))}
-                </ul>
+                </motion.div>
             </div>
-            <motion.div 
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y:0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true, amount: 0.1 }}
-                className='features__gallery'
-            >
-                {images.map((image, index) => (
-                    <img className='features__gallery-image' src={image} key={image + index} alt="" />
-                ))}
-            </motion.div>
         </section>
     )
 }

@@ -25,6 +25,13 @@ import frInfo from './locales/fr/frinfo.json';
 import esInfo from './locales/es/esinfo.json';
 import gbInfo from './locales/gb/gbinfo.json';
 
+import frAbout from './locales/fr/frabout.json';
+import esAbout from './locales/es/esabout.json';
+import gbAbout from './locales/gb/gbabout.json';
+
+import frReservation from './locales/fr/frreservation.json';
+import esReservation from './locales/es/esreservation.json';
+import gbReservation from './locales/gb/gbreservation.json';
 
 i18n
   .use(initReactI18next)
@@ -36,7 +43,9 @@ i18n
         stats: frStats,
         intro: frIntro,
         presentation: frPresentation,
-        info: frInfo
+        info: frInfo, 
+        about: frAbout,
+        reservation: frReservation
       },
       gb: {
         header: gbHeader,
@@ -44,7 +53,9 @@ i18n
         stats: gbStats,
         intro: gbIntro,
         presentation: gbPresentation,
-        info: gbInfo
+        info: gbInfo,
+        about: gbAbout,
+        reservation: gbReservation
       },
       es: {
         header: esHeader,
@@ -52,7 +63,9 @@ i18n
         stats: esStats,
         intro: esIntro,
         presentation: esPresentation,
-        info: esInfo
+        info: esInfo,
+        about: esAbout,
+        reservation: esReservation
       }
     },
     lng: "fr",

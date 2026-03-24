@@ -1,0 +1,20 @@
+{
+    "hero": {
+        "title": "Book your stay",
+        "text": "Enjoy a unique moment between the mountains and the sea through our Airbnb or Booking partners."
+    },
+    "grid":[
+        {
+            "title": "Your refuge in the heart of the jungle",
+            "subtitle": "",
+            "text": "Stay in the heart of the jungle, less than 5 minutes from Santa Marta and 10 minutes from the city center. Enjoy comfortable rooms and a unique experience surrounded by nature.",
+            "textLink": "Book on Booking.com"
+        },
+        {
+            "title": "Your refuge in the heart of the jungle",
+            "subtitle": "",
+            "text": "Stay in the heart of the jungle, less than 5 minutes from Santa Marta and 10 minutes from the city center. Enjoy comfortable rooms and a unique experience surrounded by nature.",
+            "textLink": "Book on Booking.com"
+        }
+    ]
+}

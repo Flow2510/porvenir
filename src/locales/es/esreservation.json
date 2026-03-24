@@ -1,0 +1,20 @@
+{
+    "hero": {
+        "title": "Reserva tu estancia",
+        "text": "Disfruta de un momento único entre la montaña y el mar a través de nuestros socios Airbnb o Booking."
+    },
+    "grid":[
+        {
+            "title": "Tu refugio en el corazón de la selva",
+            "subtitle": "",
+            "text": "Alójate en plena selva, a menos de 5 minutos de Santa Marta y a 10 minutos del centro de la ciudad. Disfruta de habitaciones cómodas y de una experiencia única en plena naturaleza.",
+            "textLink": "Reserva en Booking.com"
+        },
+        {
+            "title": "Tu refugio en el corazón de la selva",
+            "subtitle": "",
+            "text": "Alójate en plena selva, a menos de 5 minutos de Santa Marta y a 10 minutos del centro de la ciudad. Disfruta de habitaciones cómodas y de una experiencia única en plena naturaleza.",
+            "textLink": "Reserva en Booking.com"
+        }
+    ]
+}

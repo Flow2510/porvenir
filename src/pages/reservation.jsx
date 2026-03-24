@@ -6,25 +6,28 @@ import Brand from "../components/brand/brand";
 import chambre from '../assets/images/chambre.jpg'
 import chambre2 from '../assets/images/chambre2.jpg'
 
-import videoBackground from '../assets/video/terasse.mp4'
+import videoBackground from '../assets/video/interieur.mp4'
+import { useTranslation } from "react-i18next";
 
 export default function Reservation(){
+    const { t } = useTranslation("reservation")
+
     const data = [
         {
-            image: chambre,
-            title: "Booking",
-            subtitle: "subtitle",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, harum neque perspiciatis optio deserunt laudantium nemo impedit explicabo eos recusandae totam vero error debitis ipsam eligendi nostrum perferendis quis fugit.",
-            link: "https://www.booking.com/index.fr.html",
-            textLink: "Reservez sur Booking.com"
+            image: chambre2,
+            title: t("grid.0.title") ,
+            subtitle: "",
+            text: t("grid.0.text"),
+            link: "https://www.booking.com/",
+            textLink: t("grid.0.textLink")
         },
         {
-            image: chambre2,
-            title: "AirBnB",
-            subtitle: "subtitle",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, harum neque perspiciatis optio deserunt laudantium nemo impedit explicabo eos recusandae totam vero error debitis ipsam eligendi nostrum perferendis quis fugit.",
+            image: chambre,
+            title: t("grid.1.title") ,
+            subtitle: "",
+            text: t("grid.1.text"),
             link: "https://www.airbnb.fr/",
-            textLink: "Reservez sur AirBnB"
+            textLink: t("grid.1.textLink")
         }
     ]
 
@@ -32,8 +35,8 @@ export default function Reservation(){
         <main>
             <HalfHero
                 image={heroBackground}
-                title={'Reservation'}
-                text={'Perspiciatis distinctio quasi assumenda id ad quisquam officiis dolores fugiat consectetur aperiam iure enim? Optio?'}
+                title={t('hero.title')}
+                text={t('hero.text')}
             />
             <GridSection 
                 data={data}

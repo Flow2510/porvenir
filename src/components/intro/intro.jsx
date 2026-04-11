@@ -1,11 +1,9 @@
 import { motion } from 'motion/react';
 import './intro.scss';
-import { useTranslation } from 'react-i18next';
 import porvenirVideo from "../../assets/video/porvenir.mp4"
 
 
-export default function Intro() {
-    const { t } = useTranslation("intro")
+export default function Intro({ title, text1, text2, text3 }) {
 
     return(
         <section className='intro'>
@@ -18,7 +16,7 @@ export default function Intro() {
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        {t("title")}
+                        {title}
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 25 }}
@@ -27,7 +25,7 @@ export default function Intro() {
                         viewport={{ once: true, amount: 0.5 }}
                         className="intro__content-text"
                     >
-                        {t("text_1")}
+                        {text1}
                     </motion.p>
                     <motion.p
                         initial={{ opacity: 0, y: 25 }}
@@ -36,7 +34,7 @@ export default function Intro() {
                         viewport={{ once: true, amount: 0.5 }}
                         className="intro__content-text"
                     >
-                        {t("text_2")}
+                        {text2}
                     </motion.p>
                     <motion.p
                         initial={{ opacity: 0, y: 25 }}
@@ -45,7 +43,7 @@ export default function Intro() {
                         viewport={{ once: true, amount: 0.5 }}
                         className="intro__content-text"
                     >
-                        {t("text_3")}
+                        {text3}
                     </motion.p>
                 </div>
                 <div className='intro__video-wrapper'>

@@ -1,29 +1,17 @@
 import i18n from "i18next";
 import { initReactI18next } from 'react-i18next';
 
+import frHome from './locales/fr/frhome.json'
+import esHome from './locales/es/eshome.json'
+import gbHome from './locales/gb/gbhome.json'
+
 import frHeader from './locales/fr/frheader.json';
 import esHeader from './locales/es/esheader.json';
 import gbHeader from './locales/gb/gbheader.json';
 
-import frHero from './locales/fr/frhero.json';
-import esHero from './locales/es/eshero.json';
-import gbHero from './locales/gb/gbhero.json';
-
-import frStats from './locales/fr/frstats.json';
-import esStats from './locales/es/esstats.json';
-import gbStats from './locales/gb/gbstats.json';
-
-import frIntro from './locales/fr/frintro.json';
-import esIntro from './locales/es/esintro.json';
-import gbIntro from './locales/gb/gbintro.json';
-
-import frPresentation from './locales/fr/frpresentation.json';
-import esPresentation from './locales/es/espresentation.json';
-import gbPresentation from './locales/gb/gbpresentation.json';
-
-import frInfo from './locales/fr/frinfo.json';
-import esInfo from './locales/es/esinfo.json';
-import gbInfo from './locales/gb/gbinfo.json';
+import frFooter from './locales/fr/frfooter.json';
+import esFooter from './locales/es/esfooter.json';
+import gbFooter from './locales/gb/gbfooter.json';
 
 import frAbout from './locales/fr/frabout.json';
 import esAbout from './locales/es/esabout.json';
@@ -38,34 +26,25 @@ i18n
   .init({
     resources: {
       fr: {
+        home: frHome,
         header: frHeader,
-        hero: frHero,
-        stats: frStats,
-        intro: frIntro,
-        presentation: frPresentation,
-        info: frInfo, 
         about: frAbout,
-        reservation: frReservation
+        reservation: frReservation,
+        footer: frFooter
       },
       gb: {
+        home: gbHome,
         header: gbHeader,
-        hero: gbHero,
-        stats: gbStats,
-        intro: gbIntro,
-        presentation: gbPresentation,
-        info: gbInfo,
         about: gbAbout,
-        reservation: gbReservation
+        reservation: gbReservation,
+        footer: gbFooter
       },
       es: {
+        home: esHome,
         header: esHeader,
-        hero: esHero,
-        stats: esStats,
-        intro: esIntro,
-        presentation: esPresentation,
-        info: esInfo,
         about: esAbout,
-        reservation: esReservation
+        reservation: esReservation,
+        footer: esFooter
       }
     },
     lng: "fr",

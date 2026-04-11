@@ -1,30 +1,7 @@
 import { motion } from 'motion/react';
 import './location.scss';
 
-import minca from '../../assets/images/minca.jpg'
-import santaMarta3 from '../../assets/images/santamarta3.jpg'
-import river from '../../assets/images/fleuve.jpg'
-import beach from '../../assets/images/plage.jpg'
-
-export default function Location() {
-    const images = [
-        {
-            image: santaMarta3,
-            alt:"Centre historique de Santa Marta au crépuscule avec la mer des Caraïbes et les montagnes en arrière-plan"
-        },
-        {
-            image: beach,
-            alt:"Plage dans le parc national naturel de Tairona"
-        },
-        {
-            image: river,
-            alt:"Le fleuve Magdalena entouré de jungle tropicale près de Baranquilla en Colombie"
-        },
-        {
-            image: minca,
-            alt:"Plante tropicale devant une cascade dans la jungle de Minca"
-        }
-    ]
+export default function Location({ images, title, text1, text2 }) {
 
     return(
         <section className='location'>
@@ -38,7 +15,7 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__content-title'
                         >
-                            Explorez les environs
+                            {title}
                         </motion.h2>
                         <motion.p 
                             initial={{ opacity: 0, y: 25 }}
@@ -47,7 +24,7 @@ export default function Location() {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__content-text'
                         >
-                            Idéalement située à proximité des destinations les plus emblématiques de la côte caraïbe, notre auberge est le point de départ parfait pour découvrir la richesse culturelle et naturelle de la région. Entre plages paradisiaques, montagnes luxuriantes et villes dynamiques, chaque excursion promet une expérience unique.
+                            {text1}
                         </motion.p>
                         <motion.p 
                             className='location__content-text'
@@ -56,7 +33,7 @@ export default function Location() {
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            Que vous soyez amateur de nature, de détente ou d’aventure, tout est à portée de main pour enrichir votre séjour.
+                            {text2}
                         </motion.p>
                     </div>
                     <motion.div 

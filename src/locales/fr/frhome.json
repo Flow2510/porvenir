@@ -1,0 +1,69 @@
+{
+    "hero": {
+        "title": {
+        "first": "Auberge del",
+        "second": "Porvenir"
+        },
+        "link": "Réservation"
+    },
+    "stats": {
+        "subtitle_1": "Chambres",
+        "subtitle_2": "Langues Parlées",
+        "subtitle_3": "Minca",
+        "subtitle_4": "Santa Marta Centre"
+    },
+    "intro": {
+        "title": "Découvrez l’auberge del Porvenir",
+        "text_1" : "Située entre Santa Marta et Minca, l’Auberge del Porvenir vous accueille dans un écrin de nature où la jungle rencontre la lumière des Caraïbes. À quelques minutes de la ville et pourtant déjà ailleurs, l’atmosphère invite immédiatement à ralentir et à respirer.",
+        "text_2" : "Ici, les journées commencent avec le chant des oiseaux et se terminent sous un ciel aux couleurs chaudes du crépuscule. Entre végétation tropicale, espaces ouverts et ambiance paisible, chaque détail est pensé pour offrir un séjour simple, authentique et apaisant.",
+        "text_3" : "Que vous souhaitiez explorer les montagnes de la Sierra Nevada, découvrir les plages environnantes ou simplement profiter d’un moment de calme, l’Auberge del Porvenir est le point de départ idéal pour vivre pleinement votre séjour en Colombie."
+    },
+    "presentation": {
+        "alt_1": "patio de l'auberge del Porvenir dans la jungle près de Santa Marta en Colombie",
+        "alt_2": "cabane en bois au bord de la rivière Magdalena près de Minca",
+        "alt_3": "cabane au crépuscule dans la jungle entre Santa Marta et Minca",
+        "alt_4": "piscine extérieure dans le jardin tropical de l'auberge del Porvenir près de Santa Marta en Colombie",
+        "title": "Notre univers en images",
+        "subtitle": "Plongez dans l’ambiance de votre prochaine escapade."
+    },
+    "info": {
+        "subtitle_1": "Avis Google",
+        "subtitle_2": "Langues parlées",
+        "subtitle_3": "Clients Satisfaits"
+    },
+    "reviews":{
+        "title": "Ce que nos clients disent",
+        "subtitle": "Des expériences authentiques partagées par nos voyageurs."
+    },
+    "itemsBanner": {
+        "item_1": "Nature & Comfort",
+        "item_2": "Peaceful Atmosphere",
+        "item_3": "Authentic Experience",
+        "item_4": "Tropical Garden",
+        "item_5": "Relax & Recharge"
+    },
+    "features":{
+        "title": "Détente et Liberté",
+        "subtitle": "Tout est réuni pour vivre un séjour simple, confortable et apaisant.",
+        "feature_1": "Wi-Fi gratuit dans tout l’établissement",
+        "feature_2": "Restauration sur place, avec possibilité de profiter de repas faits maison",
+        "feature_3": "Cuisine équipée, salle à manger et espace détente commun pour partager des moments conviviaux",
+        "feature_4": "Piscine extérieure idéale pour se rafraîchir sous le soleil caribéen",
+        "feature_5": "Vélos à disposition pour explorer les environs en toute liberté",
+        "feature_6": "Patio et terrasse abritée, au cœur d’un jardin propice à la détente"
+    },
+    "location":{
+        "title": "Explorez les environs",
+        "text_1": "Idéalement située à proximité des destinations les plus emblématiques de la côte caraïbe, notre auberge est le point de départ parfait pour découvrir la richesse culturelle et naturelle de la région. Entre plages paradisiaques, montagnes luxuriantes et villes dynamiques, chaque excursion promet une expérience unique.",
+        "text_2": "Que vous soyez amateur de nature, de détente ou d’aventure, tout est à portée de main pour enrichir votre séjour.",
+        "alt_1": "Centre historique de Santa Marta au crépuscule avec la mer des Caraïbes et les montagnes en arrière-plan",
+        "alt_2": "Plage dans le parc national naturel de Tairona",
+        "alt_3": "Le fleuve Magdalena entouré de jungle tropicale près de Baranquilla en Colombie",
+        "alt_4": "Eglise de Minca"
+    },
+    "cta": {
+        "title": "Prêt à vivre l’expérience Porvenir ?",
+        "text": "Entre jungle luxuriante et rivière paisible, l’Auberge del Porvenir vous accueille pour une parenthèse hors du temps. Que vous voyagiez en couple, entre amis ou en solo, venez découvrir un lieu authentique entre Santa Marta et Minca.",
+        "link": "Consulter nos hébergements"
+    }
+}

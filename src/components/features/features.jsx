@@ -11,19 +11,9 @@ const images = [
     escalier,
     terrasse,
     chambre,
-    
 ]
 
-const equipments = [
-    "Wi-Fi gratuit dans tout l’établissement",
-    "Restauration sur place, avec possibilité de profiter de repas faits maison",
-    "Cuisine équipée, salle à manger et espace détente commun pour partager des moments conviviaux",
-    "Piscine extérieure idéale pour se rafraîchir sous le soleil caribéen",
-    "Vélos à disposition pour explorer les environs en toute liberté",
-    "Patio et terrasse abritée, au cœur d’un jardin propice à la détente"
-]
-
-export default function Features() {
+export default function Features({ features, title, subtitle }) {
     return(
         <section className='features'>
             <div className='features__wrapper'>
@@ -35,7 +25,7 @@ export default function Features() {
                         viewport={{ once: true, amount: 0.5 }}
                         className='features__content-title'
                     >
-                        Détente et Liberté
+                        {title}
                     </motion.h2>
                     <motion.p 
                         initial={{ opacity: 0, y: 25 }}
@@ -44,19 +34,19 @@ export default function Features() {
                         viewport={{ once: true, amount: 0.5 }}
                         className='features__content-subtitle'
                     >
-                        Tout est réuni pour vivre un séjour simple, confortable et apaisant.
+                        {subtitle}
                     </motion.p>
                     <ul className='features__content-list'>
-                        {equipments.map((equipment, index) => (
+                        {features.map((feature, index) => (
                             <motion.li 
                                 className='features__content-item' 
                                 initial={{ opacity: 0, y: 25 }}
                                 whileInView={{ opacity: 1, y:0 }}
                                 transition={{ duration: 0.5 }}
                                 viewport={{ once: true, amount: 0.5 }}
-                                key={equipment + index}
+                                key={feature + index}
                             >
-                                <span>→</span> {equipment}
+                                <span>→</span> {feature}
                             </motion.li>
                         ))}
                     </ul>

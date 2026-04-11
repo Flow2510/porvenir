@@ -11,12 +11,14 @@ import Reservation from './pages/reservation'
 import Rooms from './pages/rooms'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
+import ScrollToTop from './components/scrolltotop/scrolltotop';
 
 function App() {
 
   return (
     <>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>

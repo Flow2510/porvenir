@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": {
+      "first": "Inn of",
+      "second": "Porvenir"
+    },
+    "link": "Book Now"
+  },
+  "stats": {
+    "subtitle_1": "Rooms",
+    "subtitle_2": "Languages Spoken",
+    "subtitle_3": "Minca",
+    "subtitle_4": "Santa Marta City Center"
+  },
+  "intro": {
+    "title": "Discover Auberge del Porvenir",
+    "text_1": "Located between Santa Marta and Minca, Auberge del Porvenir welcomes you to a natural setting where the jungle meets the light of the Caribbean. Just minutes from the city yet already worlds away, the atmosphere immediately invites you to slow down and breathe.",
+    "text_2": "Here, days begin with birdsong and end beneath a sky painted with warm sunset colors. Surrounded by tropical vegetation, open spaces, and a peaceful atmosphere, every detail is designed to offer a simple, authentic, and relaxing stay.",
+    "text_3": "Whether you wish to explore the mountains of the Sierra Nevada, discover the nearby beaches, or simply enjoy a quiet moment, Auberge del Porvenir is the perfect starting point to fully experience your stay in Colombia."
+  },
+  "presentation": {
+    "alt_1": "Patio of Auberge del Porvenir in the jungle near Santa Marta, Colombia",
+    "alt_2": "Wooden cabin by the Magdalena River near Minca",
+    "alt_3": "Cabin at sunset in the jungle between Santa Marta and Minca",
+    "alt_4": "Outdoor swimming pool in the tropical garden of Auberge del Porvenir near Santa Marta, Colombia",
+    "title": "Our world in pictures",
+    "subtitle": "Immerse yourself in the atmosphere of your next getaway."
+  },
+  "info": {
+    "subtitle_1": "Google Reviews",
+    "subtitle_2": "Languages Spoken",
+    "subtitle_3": "Satisfied Guests"
+  },
+  "reviews": {
+    "title": "What our guests say",
+    "subtitle": "Authentic experiences shared by our travelers."
+  },
+  "itemsBanner": {
+    "item_1": "Nature & Comfort",
+    "item_2": "Peaceful Atmosphere",
+    "item_3": "Authentic Experience",
+    "item_4": "Tropical Garden",
+    "item_5": "Relax & Recharge"
+  },
+  "features": {
+    "title": "Relaxation and Freedom",
+    "subtitle": "Everything is in place for a simple, comfortable, and peaceful stay.",
+    "feature_1": "Free Wi-Fi throughout the property",
+    "feature_2": "On-site dining with the option to enjoy homemade meals",
+    "feature_3": "Fully equipped kitchen, dining area, and shared lounge space for convivial moments",
+    "feature_4": "Outdoor swimming pool, perfect for cooling off under the Caribbean sun",
+    "feature_5": "Bicycles available to explore the surroundings freely",
+    "feature_6": "Patio and covered terrace in the heart of a relaxing garden"
+  },
+  "location": {
+    "title": "Explore the surroundings",
+    "text_1": "Ideally located near some of the most iconic destinations on the Caribbean coast, our inn is the perfect starting point to discover the region’s cultural and natural richness. Between paradise beaches, lush mountains, and vibrant cities, every excursion promises a unique experience.",
+    "text_2": "Whether you are a nature lover, seeking relaxation, or looking for adventure, everything is within reach to enrich your stay.",
+    "alt_1": "Historic center of Santa Marta at dusk with the Caribbean Sea and mountains in the background",
+    "alt_2": "Beach in Tayrona National Natural Park",
+    "alt_3": "The Magdalena River surrounded by tropical jungle near Barranquilla, Colombia",
+    "alt_4": "Church of Minca"
+  },
+  "cta": {
+    "title": "Ready to experience Porvenir?",
+    "text": "Between lush jungle and a peaceful river, Auberge del Porvenir welcomes you for a timeless escape. Whether you're traveling as a couple, with friends, or solo, come and discover an authentic place between Santa Marta and Minca.",
+    "link": "View our accommodations"
+  }
+}

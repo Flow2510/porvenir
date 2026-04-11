@@ -11,7 +11,7 @@ export default function GridSection({ data }) {
                         <h2 className='grid-section__content-title'>{d.title}</h2>
                         <p className='grid-section__content-text'>{d.text}</p>
                         {d.textLink && d.link &&
-                            <a href={d.link} className='grid-section__content-link'>
+                            <a href={d.link} className='grid-section__content-link' target='_blank'>
                                 {d.textLink}<span>→</span>
                             </a>
                         }

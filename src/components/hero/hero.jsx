@@ -1,11 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import './hero.scss'
-import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 import background from '../../assets/images/maison-ciel.jpg'
 
-export default function Hero() {
-    const { t } = useTranslation("hero");
+export default function Hero({ link }) {
 
     return(
         <section className='hero'>
@@ -23,7 +21,7 @@ export default function Hero() {
                     <h1 className='hero__logo-line1'>Auberge <span>del</span></h1>
                     <h1 className='hero__logo-line2'>Porvenir</h1>
                 </div>
-                <NavLink to={'/'} className="hero__content-link">{t("link")}<span>→</span></NavLink>
+                <NavLink to={'/'} className="hero__content-link">{link}<span>→</span></NavLink>
             </motion.div>
         </section>
     )

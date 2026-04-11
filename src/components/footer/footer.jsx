@@ -1,8 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import './footer.scss';
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+    const { t } = useTranslation("footer")
+
     return(
         <footer className='footer'>
             <motion.div 
@@ -45,12 +48,11 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0.5 }}
                 className='footer__nav'
             >
-                <NavLink className={'footer__nav-link'} to={'/'}>Home</NavLink>
-                <NavLink className={'footer__nav-link'} to={'/rooms'}>Rooms</NavLink>
-                <NavLink className={'footer__nav-link'} to={'/about'}>About</NavLink>
-                <NavLink className={'footer__nav-link'} to={'/reservation'}>Reservation</NavLink>
-                <NavLink className={'footer__nav-link'} to={'/localisation'}>Localisation</NavLink>
-                <NavLink className={'footer__nav-link'} to={'/contact'}>Contact</NavLink>
+                <NavLink className={'footer__nav-link'} to={'/'}>{t("nav.link_1")}</NavLink>
+                <NavLink className={'footer__nav-link'} to={'/rooms'}>{t("nav.link_2")}</NavLink>
+                <NavLink className={'footer__nav-link'} to={'/about'}>{t("nav.link_3")}</NavLink>
+                <NavLink className={'footer__nav-link'} to={'/reservation'}>{t("nav.link_4")}</NavLink>
+                <NavLink className={'footer__nav-link'} to={'/contact'}>{t("nav.link_5")}</NavLink>
             </motion.nav>
             <motion.iframe
                 title='Map'
@@ -70,15 +72,15 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0.5 }}
                 className='footer__info'
             >
-                <p className='footer__info-text'>© {new Date().getFullYear()} Auberge del Porvenir — Santa Marta, Colombie</p>
+                <p className='footer__info-text'>© {new Date().getFullYear()}{t("subtitle")} </p>
                 <a
                     className='footer__info-link'
-                    href="https://flowportfolio.netlify.app/"
+                    href="https://sendraflorian.netlify.app/"
                     target='_blank'
                     rel="noopener noreferrer"
                     aria-label="Site conçu par Sendra Florian"
                 >
-                    Crédit 
+                   @ Crédits
                 </a>
             </motion.div>
         </footer>

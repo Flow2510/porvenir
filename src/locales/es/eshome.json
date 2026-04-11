@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": {
+      "first": "Hostal del",
+      "second": "Porvenir"
+    },
+    "link": "Reservar"
+  },
+  "stats": {
+    "subtitle_1": "Habitaciones",
+    "subtitle_2": "Idiomas hablados",
+    "subtitle_3": "Minca",
+    "subtitle_4": "Centro de Santa Marta"
+  },
+  "intro": {
+    "title": "Descubra la Auberge del Porvenir",
+    "text_1": "Ubicada entre Santa Marta y Minca, la Auberge del Porvenir le da la bienvenida en un entorno natural donde la selva se encuentra con la luz del Caribe. A pocos minutos de la ciudad y, sin embargo, ya en otro mundo, el ambiente invita inmediatamente a desacelerar y respirar.",
+    "text_2": "Aquí, los días comienzan con el canto de los pájaros y terminan bajo un cielo de cálidos colores al atardecer. Rodeado de vegetación tropical, espacios abiertos y una atmósfera tranquila, cada detalle está pensado para ofrecer una estancia sencilla, auténtica y relajante.",
+    "text_3": "Ya sea que desee explorar las montañas de la Sierra Nevada, descubrir las playas cercanas o simplemente disfrutar de un momento de calma, la Auberge del Porvenir es el punto de partida ideal para vivir plenamente su estancia en Colombia."
+  },
+  "presentation": {
+    "alt_1": "Patio de la Auberge del Porvenir en la selva cerca de Santa Marta, Colombia",
+    "alt_2": "Cabaña de madera a orillas del río Magdalena cerca de Minca",
+    "alt_3": "Cabaña al atardecer en la selva entre Santa Marta y Minca",
+    "alt_4": "Piscina exterior en el jardín tropical de la Auberge del Porvenir cerca de Santa Marta, Colombia",
+    "title": "Nuestro universo en imágenes",
+    "subtitle": "Sumérjase en el ambiente de su próxima escapada."
+  },
+  "info": {
+    "subtitle_1": "Reseñas en Google",
+    "subtitle_2": "Idiomas hablados",
+    "subtitle_3": "Clientes satisfechos"
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros huéspedes",
+    "subtitle": "Experiencias auténticas compartidas por nuestros viajeros."
+  },
+  "itemsBanner": {
+    "item_1": "Naturaleza y confort",
+    "item_2": "Ambiente tranquilo",
+    "item_3": "Experiencia auténtica",
+    "item_4": "Jardín tropical",
+    "item_5": "Relájate y recarga energías"
+  },
+  "features": {
+    "title": "Relajación y libertad",
+    "subtitle": "Todo está reunido para disfrutar de una estancia sencilla, cómoda y tranquila.",
+    "feature_1": "Wi-Fi gratuito en todo el establecimiento",
+    "feature_2": "Restaurante en el lugar con opción de disfrutar de comidas caseras",
+    "feature_3": "Cocina equipada, comedor y espacio común de descanso para compartir momentos agradables",
+    "feature_4": "Piscina exterior ideal para refrescarse bajo el sol caribeño",
+    "feature_5": "Bicicletas disponibles para explorar los alrededores con total libertad",
+    "feature_6": "Patio y terraza cubierta en el corazón de un jardín ideal para relajarse"
+  },
+  "location": {
+    "title": "Explora los alrededores",
+    "text_1": "Idealmente ubicada cerca de algunos de los destinos más emblemáticos de la costa caribeña, nuestra posada es el punto de partida perfecto para descubrir la riqueza cultural y natural de la región. Entre playas paradisíacas, montañas exuberantes y ciudades vibrantes, cada excursión promete una experiencia única.",
+    "text_2": "Ya sea que le guste la naturaleza, la relajación o la aventura, todo está al alcance para enriquecer su estancia.",
+    "alt_1": "Centro histórico de Santa Marta al atardecer con el mar Caribe y las montañas al fondo",
+    "alt_2": "Playa en el Parque Nacional Natural Tayrona",
+    "alt_3": "El río Magdalena rodeado de selva tropical cerca de Barranquilla, Colombia",
+    "alt_4": "Iglesia de Minca"
+  },
+  "cta": {
+    "title": "¿Listo para vivir la experiencia Porvenir?",
+    "text": "Entre selva exuberante y un río tranquilo, la Auberge del Porvenir le invita a disfrutar de un momento fuera del tiempo. Ya sea en pareja, con amigos o en solitario, venga a descubrir un lugar auténtico entre Santa Marta y Minca.",
+    "link": "Ver nuestros alojamientos"
+  }
+}

@@ -7,6 +7,7 @@ export default function Header() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
     const { t, i18n } = useTranslation("header")
+    const [language, setLanguage] = useState(localStorage.getItem("lang") || "fr")
 
     const languages = [
         {
@@ -27,8 +28,9 @@ export default function Header() {
         setMenuIsOpen(prev => !prev)
     }
 
-    const setLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+    const handleSelectLanguage = (lng) => {
+        setLanguage(lng)
+        localStorage.setItem("lang", lng)
     };
 
     useEffect(() => {
@@ -39,6 +41,10 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     });
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+    }, [language])
 
     return(
         <>
@@ -60,7 +66,7 @@ export default function Header() {
                     <NavLink className={'header__nav-link header__nav-link--contact'} to={'/contact'}>{t("nav.contact")}</NavLink>
                     <select
                         className='header__select'
-                        onChange={(e) => setLanguage(e.target.value)}
+                        onChange={(e) => handleSelectLanguage(e.target.value)}
                         value={i18n.language}
                     >
                         {languages.map((lang, index) => (
@@ -89,7 +95,7 @@ export default function Header() {
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/about'}>{t("nav.about")}</NavLink>
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/reservation'}>{t("nav.reservation")}</NavLink>
                     <NavLink onClick={(closeMenu)} className={'mobile-menu__nav-link'} to={'/contact'}>{t("nav.contact")}</NavLink>
-                    <select className='mobile-menu__select' name="" id="" onChange={(e) => setLanguage(e.target.value)}>
+                    <select className='mobile-menu__select' name="" id="" onChange={(e) => handleSelectLanguage(e.target.value)}>
                         {languages.map((lang, index) => (
                             <option key={lang.value + index} className='header__select-option' value={lang.value}>{lang.flag}</option>
                         ))}

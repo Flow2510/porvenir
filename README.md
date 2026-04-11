@@ -43,9 +43,9 @@ Traductions complete en :
 
 🇪🇸 Espagnol
 
-Optimisation du code
+Optimisation du code, des performances, de l'accessibilité et du SEO
 
-Connexion du formulaire
+Connexion du formulaire de contact
 
 
 

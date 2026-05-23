@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import './presentation.scss';
 
 import videoGallery from '../../assets/video/terasse.mp4'
+import RevealWord from '../revealword/revealword';
 
 export default function Presentation({ images, title, subtitle }) {
 
@@ -15,7 +16,9 @@ export default function Presentation({ images, title, subtitle }) {
                     viewport={{ once: true, amount: 0.5 }}
                     className='presentation__content-title'
                 >
-                    {title}
+                    <RevealWord 
+                        text={title}
+                    />                    
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 25 }}

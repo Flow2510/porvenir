@@ -1,4 +1,6 @@
 import { useMediaQuery } from '../../hooks/useMediaQuery';
+import { motion, useScroll, useTransform } from 'motion/react';
+import { useEffect, useRef, useState } from 'react';
 
 import './horizontalgallery.scss';
 
@@ -7,8 +9,6 @@ import bain from "../../assets/images/salle-bain.jpg"
 import salon from "../../assets/images/salle-manger.jpg"
 import volet from "../../assets/images/chambre-volet.jpg"
 import dortoir from "../../assets/images/chambre2.jpg"
-import { motion, useScroll, useTransform } from 'motion/react';
-import { useEffect, useRef, useState } from 'react';
 
 export default function HorizontalGallery() {
     const isMobile = useMediaQuery("(max-width: 1200px)")
@@ -54,8 +54,8 @@ export default function HorizontalGallery() {
 
     useEffect(() => {
         const observer = new ResizeObserver((entries) => {
-        const entry = entries[0]
-        setWidth(entry.contentRect.width)
+            const entry = entries[0]
+            setWidth(entry.contentRect.width)
         })
 
         if (ref.current) observer.observe(ref.current)
@@ -63,7 +63,6 @@ export default function HorizontalGallery() {
         return () => observer.disconnect()
     }, [])
 
-    const GAP = 40
     const distance = ( width ) * (images.length - 1);
     const x = useTransform(scrollYProgress, [0, 1], ["0%", `-${distance}px`])
 
@@ -90,14 +89,22 @@ export default function HorizontalGallery() {
                             style={{ x }}
                         >
                             {images.map((image, index) => (
-                                <article className="horizontal-gallery__large-article" key={index + image.alt} ref={ref}>
+                                <motion.article 
+                                    className="horizontal-gallery__large-article" 
+                                    key={index + image.alt} 
+                                    ref={ref}
+                                    initial={{ x: 120 }}
+                                    whileInView={{ x:0 }}
+                                    transition={{ duration: 0.6 }}
+                                    viewport={{ once: true }}
+                                >
                                     <img className="horizontal-gallery__large-image" src={image.image} alt={image.alt} />
                                     <div className="horizontal-gallery__large-overlay"></div>
                                     <div className='horizontal-gallery__large-content'>
                                         <h2 className='horizontal-gallery__large-title'>{image.title}</h2>
                                         <p className='horizontal-gallery__large-text'>{image.text}</p>
                                     </div>
-                                </article>
+                                </motion.article>
                             ))}
                         </motion.div>
                     </div>

@@ -57,9 +57,16 @@
         }
     }
 
-    &__image{
+    &__background-wrapper{
         width: 100%;
-        height: 50vh;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    &__background{
+        width: 100%;
+        height: 60vh;
         object-fit: cover;
+        display: block;
     }
 }

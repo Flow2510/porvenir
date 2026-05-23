@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import Review from '../review/review'
 import './reviews.scss'
+import RevealWord from '../revealword/revealword'
 
 export default function Reviews({ reviews, title, subtitle }) {
     return(
@@ -13,7 +14,9 @@ export default function Reviews({ reviews, title, subtitle }) {
                     viewport={{ once: true, amount: 0.5 }}
                     className='reviews__content-title'
                 >
-                    {title}
+                    <RevealWord 
+                        text={title}
+                    />                    
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 25 }}

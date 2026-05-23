@@ -5,6 +5,7 @@ import escalier from '../../assets/images/escalier-jungle.jpg'
 import terrasse from '../../assets/images/terrasse.jpg'
 import chambre from '../../assets/images/chambre-volet.jpg'
 import auberge from '../../assets/images/maison-ciel.jpg'
+import RevealWord from '../revealword/revealword';
 
 const images = [
     auberge,
@@ -25,7 +26,9 @@ export default function Features({ features, title, subtitle }) {
                         viewport={{ once: true, amount: 0.5 }}
                         className='features__content-title'
                     >
-                        {title}
+                        <RevealWord 
+                            text={title}
+                        />                        
                     </motion.h2>
                     <motion.p 
                         initial={{ opacity: 0, y: 25 }}

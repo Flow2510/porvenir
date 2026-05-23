@@ -5,6 +5,9 @@ import HorizontalGallery from "../components/horizontalgallery/horizontalgallery
 import VideoFeatures from "../components/videofeatures/videofeatures";
 import VideoHero from "../components/videohero/videohero";
 import videoBackground from '../assets/video/terasse.mp4'
+import Brand from "../components/brand/brand";
+
+import videoBrand from '../assets/video/jungle.mp4'
 
 export default function Rooms({ isMobile }){
     return(
@@ -21,11 +24,8 @@ export default function Rooms({ isMobile }){
             <VideoFeatures />
             <Amenities />
             <Extra />
-            <Cta 
-                title={"Title"}
-                text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis nostrum vero? Facere error adipisci culpa consequatur expedita ea quam reprehenderit aspernatur, eos iusto alias dolorum doloremque vitae, ex minima."}
-                link={"link"}
-                to={""}
+            <Brand
+                videoBackground={videoBrand}
             />
         </main>
     )

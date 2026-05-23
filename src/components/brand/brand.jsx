@@ -1,7 +1,21 @@
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import './brand.scss';
+import { useRef } from 'react';
 
 export default function Brand({ videoBackground }) {
+    const ref = useRef(null)
+
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start end", "end end"]
+    })
+
+    const clipPath = useTransform(
+        scrollYProgress,
+        [0, 1],
+        ["inset(0% 50% 0% 50%)", "inset(0% 0% 0% 0%)"]
+    )
+
     return(
         <section className='brand'>
             <div className='brand__content'>
@@ -16,18 +30,20 @@ export default function Brand({ videoBackground }) {
                     <h1 className='brand__logo-line2'>Porvenir</h1>
                 </motion.div>
             </div>
-            <motion.video 
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y:0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className='brand__image' 
-                src={videoBackground}
-                alt="" 
-                autoPlay
-                muted
-                loop
-            />
+            <motion.div 
+                className='brand__background-wrapper'
+                ref={ref}
+                style={{ clipPath }}
+            >
+                <video 
+                    className='brand__background' 
+                    src={videoBackground}
+                    alt="" 
+                    autoPlay
+                    muted
+                    loop
+                />
+            </motion.div>
         </section>
     )
 }

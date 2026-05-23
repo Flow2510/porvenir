@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import './cta.scss';
 import { NavLink } from 'react-router-dom';
+import RevealWord from '../revealword/revealword';
 
 export default function Cta({ title, text, link, to }) {
     return(
@@ -13,7 +14,9 @@ export default function Cta({ title, text, link, to }) {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    {title}
+                    <RevealWord 
+                        text={title}
+                    />
                 </motion.h2>
                 <motion.p 
                     className='cta__content-text'

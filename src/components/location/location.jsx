@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import './location.scss';
+import RevealWord from '../revealword/revealword';
 
 export default function Location({ images, title, text1, text2 }) {
 
@@ -15,7 +16,9 @@ export default function Location({ images, title, text1, text2 }) {
                             viewport={{ once: true, amount: 0.5 }}
                             className='location__content-title'
                         >
-                            {title}
+                            <RevealWord 
+                                text={title}
+                            />                            
                         </motion.h2>
                         <motion.p 
                             initial={{ opacity: 0, y: 25 }}
